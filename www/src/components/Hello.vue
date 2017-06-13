@@ -141,7 +141,7 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .item{
-height: 500px;
+height: 800px;
 }
 
 

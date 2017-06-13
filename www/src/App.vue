@@ -20,7 +20,7 @@ export default {
   margin-top: 60px;
 }*/
 .item {
-  height: 1000px;
+  height: 800px;
   width: cover;
 }
 </style>
