@@ -11,6 +11,7 @@ var schema = new mongoose.Schema({
     conditionalOffer: {type: Boolean, required: true},
     activeListing: {type: Boolean, required: true},
     isFeature: {type: Boolean},
+    relatedImages: {type: Array, required: true},
     //propertyType: {type: }
     // Relations
     listingPrice: {type: Number, required: true},
