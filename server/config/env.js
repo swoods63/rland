@@ -3,10 +3,10 @@ let env = {
 	NODE_ENV: 'development',
 	PORT: 3000,
 	DBPROTOCOL: 'mongodb',
-	DBUSERNAME: 'dustysue',
-	DBPASSWORD: 'dustysue',
-	DBHOST: 'ds149491.mlab.com:49491',
-	DBNAME: 'kanbandustysue',
+	DBUSERNAME: 'elio',
+	DBPASSWORD: 'rec4321',
+	DBHOST: 'ds123752.mlab.com:23752',
+	DBNAME: 'rland',
 	SERVERNAME: 'dev-server'
 }
 
@@ -25,3 +25,6 @@ env.CONNECTIONSTRING = `${env.DBPROTOCOL}://${env.DBUSERNAME}:${env.DBPASSWORD}@
 process.env.CONNECTIONSTRING = env.CONNECTIONSTRING
 
 exports = env
+
+
+
