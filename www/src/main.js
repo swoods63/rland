@@ -3,12 +3,22 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import io from 'socket.io-client'
+import store from './store'
 
-Vue.config.productionTip = false
 
-/* eslint-disable no-new */
+let socket = io('http://localhost:3000')
+
+socket.on('CONNECTED', function (data) {
+  console.log(data)
+  socket.emit('update', { data: 'blarg', boardId: '3289748320' })
+})
+
+
+
 new Vue({
   el: '#app',
+  store,
   router,
   template: '<App/>',
   components: { App }
