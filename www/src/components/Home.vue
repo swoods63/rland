@@ -1,80 +1,84 @@
 <template>
-  <div class="cb-slideshow">
-    <div class="button-container">
-      <div class="buttons t-shadow">
-        <div class="button">
-          <button>
-            <i class="fa fa-fw fa-envelope fa-3x t-shadow"></i>
-          </button>
-          <h3>
-            Contact Us
-          </h3>
-        </div>
-        <div class="button">
-          <button>
-            <i class="fa fa-fw fa-home fa-3x t-shadow"></i>
-          </button>
-          <h3>
-            Properties
-          </h3>
-        </div>
-        <div class="button">
-          <button>
-            <i class="fa fa-fw fa-user fa-3x t-shadow"></i>
-          </button>
-          <h3>
-            Login
-          </h3>
+  <div class "home">
+    <div class="cb-slideshow">
+      <div class="button-container">
+        <div class="buttons t-shadow">
+          <div class="button">
+            <button>
+              <i class="fa fa-fw fa-envelope fa-3x t-shadow"></i>
+            </button>
+            <h3>
+              Contact Us
+            </h3>
+          </div>
+          <div class="button">
+            <button>
+              <i class="fa fa-fw fa-home fa-3x t-shadow"></i>
+            </button>
+            <h3>
+              Properties
+            </h3>
+          </div>
+          <div class="button">
+            <button>
+              <i class="fa fa-fw fa-user fa-3x t-shadow"></i>
+            </button>
+            <h3>
+              Login
+            </h3>
+          </div>
         </div>
       </div>
+      <ul>
+        <li>
+          <span>Image 1</span>
+        </li>
+        <li>
+          <span>Image 2</span>
+        </li>
+        <li>
+          <span>Image 3</span>
+        </li>
+        <li>
+          <span>Image 4</span>
+        </li>
+        <li>
+          <span>Image 5</span>
+        </li>
+        <li>
+          <span>Image 6</span>
+        </li>
+        <li>
+          <span>Image 7</span>
+        </li>
+        <li>
+          <span>Image 8</span>
+        </li>
+        <li>
+          <span>Image 9</span>
+        </li>
+        <li>
+          <span>Image 10</span>
+        </li>
+        <li>
+          <span>Image 11</span>
+        </li>
+        <li>
+          <span>Image 12</span>
+        </li>
+        <li>
+          <span>Image 13</span>
+        </li>
+      </ul>
     </div>
-    <ul >
-      <li>
-        <span>Image 1</span>
-      </li>
-      <li>
-        <span>Image 2</span>
-      </li>
-      <li>
-        <span>Image 3</span>
-      </li>
-      <li>
-        <span>Image 4</span>
-      </li>
-      <li>
-        <span>Image 5</span>
-      </li>
-      <li>
-        <span>Image 6</span>
-      </li>
-      <li>
-        <span>Image 7</span>
-      </li>
-      <li>
-        <span>Image 8</span>
-      </li>
-      <li>
-        <span>Image 9</span>
-      </li>
-      <li>
-        <span>Image 10</span>
-      </li>
-      <li>
-        <span>Image 11</span>
-      </li>
-      <li>
-        <span>Image 12</span>
-      </li>
-      <li>
-        <span>Image 13</span>
-      </li>
-    </ul>
   </div>
 </template>
 
+
 <script>
-export default {
-  name: 'hello',
+ import Featured from './Featured'
+  export default {
+  name: 'home',
   data() {
     return {
 
@@ -86,12 +90,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-.text-yellow{
+.text-yellow {
   color: #f5a608;
 }
 
-.t-shadow{
+.t-shadow {
   text-shadow: 1px 1px 1px #000;
 }
 
@@ -110,13 +113,13 @@ export default {
   z-index: 10;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
   .button-container .buttons {
     flex-direction: column;
   }
 }
 
-.button-container .buttons .button{
+.button-container .buttons .button {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -145,7 +148,7 @@ export default {
   border: 2px solid rgba(200, 200, 200, .5);
 }
 
-.cb-slideshow{
+.cb-slideshow {
   position: absolute;
   width: 100%;
   height: 1000px;
@@ -153,7 +156,7 @@ export default {
   left: 0px;
 }
 
-.cb-slideshow ul{
+.cb-slideshow ul {
   z-index: -10;
   list-style: none;
 }
