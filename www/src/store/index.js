@@ -63,7 +63,6 @@ export default new Vuex.Store({
         .catch(handleError)
     },
 
-
     getProperty({commit, dispatch}, id) {
 
       api('properties/' + id)
@@ -73,8 +72,6 @@ export default new Vuex.Store({
         .catch(handleError)
     },
 
-
-
     createProperty({commit, dispatch}, property) {
       api.post('properties/', property)
         .then(res => {
@@ -82,7 +79,6 @@ export default new Vuex.Store({
         })
         .catch(handleError)
     },
-
 
     removeProperty({commit, dispatch }, board) {
       api.delete('properties/' + property._id)

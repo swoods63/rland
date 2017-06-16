@@ -1,5 +1,12 @@
 <template>
-  <div class="footer">
+  <div class="featured">
+    <div class= "container">
+      <div>
+
+      </div>
+
+    </div>
+
 
 
   </div>
@@ -8,7 +15,7 @@
 
 <script>
 export default {
-  name: 'footer',
+  name: 'featured',
   data(){
 
   },

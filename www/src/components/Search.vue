@@ -1,5 +1,6 @@
 <template>
-  <div class="footer">
+  <div class="search">
+  rties">
 
 
   </div>
@@ -8,7 +9,7 @@
 
 <script>
 export default {
-  name: 'footer',
+  name: 'search',
   data(){
 
   },
