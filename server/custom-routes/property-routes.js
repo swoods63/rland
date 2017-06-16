@@ -8,10 +8,10 @@ export default {
     path: '/propertysearch',
     reqType: 'post',
     method(req, res, next) {
-      let action = 'Return property by search criteria'
+      let action = 'Return properties by search criteria'
       Properties.find(req.body)
         .then(properties => {
-          res.send(properties)
+          res.send(handleResponse(action, properties))
         }).catch(error => {
           return next(handleResponse(action, null, error))
         })
