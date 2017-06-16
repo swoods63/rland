@@ -1,5 +1,5 @@
 <template>
-  <div class="privacy-policy">
+  <div class="privacy">
 
 
   </div>
@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'privacy-policy',
+  name: 'privacy',
   data(){
 
   },
