@@ -9,17 +9,17 @@ import store from './store'
 
 let socket = io('http://localhost:3000')
 
-socket.on('CONNECTED', function (data) {
-  console.log(data)
-  socket.emit('update', { data: 'blarg', boardId: '3289748320' })
+socket.on('CONNECTED', function(data) {
+    console.log(data)
+    socket.emit('update', { data: 'blarg', boardId: '3289748320' })
 })
 
 
 
 new Vue({
-  el: '#app',
-  store,
-  router,
-  template: '<App/>',
-  components: { App }
+    el: '#app',
+    store,
+    router,
+    template: '<App/>',
+    components: { App }
 })
