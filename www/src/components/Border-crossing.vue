@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <div class="border-crossing">
 
 
   </div>
@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'footer',
+  name: 'border-crossing',
   data(){
 
   },

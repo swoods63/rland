@@ -1,5 +1,5 @@
 <template>
-  <div class="component">
+  <div class="term-con">
 
 
   </div>
@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'component',
+  name: 'term-con',
   data(){
 
   },

@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <div class="advertising">
 
 
   </div>
@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'footer',
+  name: 'adverting',
   data(){
 
   },
