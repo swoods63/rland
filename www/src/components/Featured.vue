@@ -1,11 +1,6 @@
 <template>
   <div class="featured">
-<<<<<<< HEAD
-    <div class= "container">
-      <div>
-      </div>
-    </div>
-=======
+    <div class= "container">     
     <div class="row FP">
       <h2 class="text-center">Featured Property</h2>
     </div>
@@ -18,11 +13,8 @@
       </div>
       <div class="col-md-4 p3">
         <img class="img-responsive" src="static\Featured-imgs\ryan-moreno-99473.jpg">
-
       </div>
     </div>
-
->>>>>>> 9dbb25d1e01ec02aaa56fdb615f62e20e411ff1e
   </div>
 </template>
 
