@@ -1,5 +1,5 @@
-<!--<template>
-  <div>
+<template>
+  <div class="property">
     Active Property: {{property}}
   </div>
 </template>
@@ -19,4 +19,4 @@ export default {
 </script>
 
 <style scoped>
-</style>-->
+</style>

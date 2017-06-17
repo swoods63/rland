@@ -1,40 +1,20 @@
 <template>
   <div class="featured">
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img src="static/Carousel-imgs/hannu-keski-hakuni-11194.jpg" alt="...">
-          <div class="carousel-caption">
-            ...
-          </div>
-        </div>
-        <div class="item">
-          <img src="static/Carousel-imgs/hannu-keski-hakuni-11194.jpg" alt="...">
-          <div class="carousel-caption">
-            ...
-          </div>
-        </div>
-        ...
-      </div>
-
-      <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+    <div class="row FP">
+      <h2 class="text-center">Featured Property</h2>
     </div>
+    <div class="row properties">
+      <div class="col-md-4 p1">
+        <img class="img-responsive" src="static\Featured-imgs\olivier-guillard-49712.jpg">
+      </div>
+      <div class="col-md-4 p2">
+        <img class="img-responsive" src="static\Featured-imgs\olivier-guillard-49712.jpg">
+      </div>
+      <div class="col-md-4 p3">
+        <img class="img-responsive" src="static\Featured-imgs\ryan-moreno-99473.jpg">
+      </div>
+    </div>
+
   </div>
 </template>
 
@@ -53,5 +33,28 @@ export default {
 
 
 <style scoped>
+.FP {
+  padding-top: 20px;
+  padding: 50px;
+  border-bottom: 2px;
+}
+
+.featured {
+  padding-top: 20px;
+  padding: 50px;
+  border-bottom: 2px;
+}
+
+
+h2 {
+  font-family:family=Dancing+Script;
+  font-size: 100px;
+  border: 5px solid red;
+  margin-left: 100px;
+  margin-right: 100px;
+
+}
+
+
 
 </style>
