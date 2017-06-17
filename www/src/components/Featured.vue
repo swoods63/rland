@@ -1,5 +1,6 @@
 <template>
   <div class="featured">
+  
     <div class= "container">
       <div>
 

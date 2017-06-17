@@ -1,6 +1,6 @@
 <template>
   <div class="privacy">
-
+<p> </p>  
 
   </div>
 </template>

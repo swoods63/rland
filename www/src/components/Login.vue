@@ -1,21 +1,45 @@
 <template>
   <div class="login">
-
-
-  </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Welcome to my site</h3>
+            </div>
+            <div class="panel-body">
+              <form role="form">
+                <fieldset>
+                  <div class="form-group">
+                    <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                  </div>
+                  <!-- Change this to a button or input when using this as a form -->
+                  <button type="button" class="btn btn-success btn-block">Login</button>
+                  <p>New Member? <a href="signUp.html" class="">Sign up</a></p>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 </template>
 
 
 <script>
-export default {
-  name: "login",
-  data(){
+  export default {
+    name: "login",
+    data() {
 
-  },
-  computed:{},
-  methods:{},
-  components:{}
-}
+    },
+    computed: {},
+    methods: {},
+    components: {}
+  }
+
 </script>
 
 
