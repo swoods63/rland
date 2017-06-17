@@ -12,6 +12,7 @@
       </div>
       <div class="col-md-4 p3">
         <img class="img-responsive" src="static\Featured-imgs\ryan-moreno-99473.jpg">
+
       </div>
     </div>
 
