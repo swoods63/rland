@@ -1,6 +1,5 @@
 <template>
   <div class="featured">
-    <div class= "container">     
     <div class="row FP">
       <h2 class="text-center">Featured Property</h2>
     </div>
@@ -52,8 +51,9 @@ h2 {
   border: 5px solid red;
   margin-left: 100px;
   margin-right: 100px;
-
 }
+
+
 
 
 

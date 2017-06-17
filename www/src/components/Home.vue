@@ -78,32 +78,21 @@
     <Featured></Featured>
     <Properties></Properties>
   </div>
-<<<<<<< HEAD
 </div>
-=======
-  <!--</div>-->
+</div>
 
 
->>>>>>> 9dbb25d1e01ec02aaa56fdb615f62e20e411ff1e
 </template>
 
 
 <script>
-<<<<<<< HEAD
-export default {
-  name: 'home',
-  data() {
-    return {
-=======
     import Featured from './Featured'
     import Properties from './Properties'
 
->>>>>>> 9dbb25d1e01ec02aaa56fdb615f62e20e411ff1e
+export default {
+  name: 'home',
 
 
-
-    export default {
-        name: 'home',
         mounted() {
             //this.$store.dispatch('getAuth')
         },
@@ -117,14 +106,13 @@ export default {
 </script>
 
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+//  Add "scoped" attribute to limit CSS to this component only
 <style scoped>
-    /*full-screen is the featured carousel this bring it down under the main screen*/
 
     .full-screen {
         height: 80vh;
     }
-    /*.text-yellow {
+    /* .text-yellow {
         color: #f5a608;
     }*/
 
