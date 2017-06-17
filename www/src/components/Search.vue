@@ -1,8 +1,8 @@
 <template>
-  <div class="search">  
+  <div class="search">
     <div class="container">
-      <div class="row"> 
-        <div class="col-xs-12"> 
+      <div class="row">
+        <div class="col-xs-12">
           <form @submit.prevent="searchProperties">
           <div class="form-group">
             <ul class="dropdown-menu">
@@ -16,7 +16,7 @@
                   <input type="checkbox"/>&nbsp;River Front
                 </a>
               </li>
-              <li>              
+              <li>
                 <a href="#" class="small" data-value="option3" tabIndex="-1">
                   <input type="checkbox"/>&nbsp;Hunting Land
                 </a>
@@ -46,9 +46,9 @@
                   <input type="checkbox"/>&nbsp;Resorts
                 </a>
               </li>
-            </ul>            
+            </ul>
           </div>
-          <div class="form-group">  
+          <div class="form-group">
             <ul class="dropdown-menu">
               <li>
                 <a href="#" class="small" data-value="option9" tabIndex="-1">
@@ -60,7 +60,7 @@
                   <input type="checkbox"/>&nbsp;$51,000 - $150,000
                 </a>
               </li>
-              <li>              
+              <li>
                 <a href="#" class="small" data-value="option11" tabIndex="-1">
                   <input type="checkbox"/>&nbsp;$151,000 - $300,000
                 </a>
@@ -72,12 +72,12 @@
               </li>
               <li>
                 <a href="#" class="small" data-value="option13" tabIndex="-1">
-                  <input type="checkbox"/>&nbsp;$500,000 + 
+                  <input type="checkbox"/>&nbsp;$500,000 +
                 </a>
-              </li>              
-            </ul>          
+              </li>
+            </ul>
           </div>
-          <div class="form-group">  
+          <div class="form-group">
             <ul class="dropdown-menu">
               <li>
                 <a href="#" class="small" data-value="option14" tabIndex="-1">
@@ -89,7 +89,7 @@
                   <input type="checkbox"/>&nbsp;Less Than
                 </a>
               </li>
-              <li>              
+              <li>
                 <a href="#" class="small" data-value="option16" tabIndex="-1">
                   <input type="checkbox"/>&nbsp;5 acres
                 </a>
@@ -101,7 +101,7 @@
               </li>
               <li>
                 <a href="#" class="small" data-value="option18" tabIndex="-1">
-                  <input type="checkbox"/>&nbsp;50 acres 
+                  <input type="checkbox"/>&nbsp;50 acres
                 </a>
               </li>
               <li>
@@ -109,7 +109,7 @@
                   <input type="checkbox"/>&nbsp;100 acres
                 </a>
               </li>
-            </ul> 
+            </ul>
           </div>
             <button class="btn btn-primary" type="submit">Search Properties</button>
           </form>
@@ -135,10 +135,12 @@
 export default {
   name: 'search',
   data(){
-    
+    return {
+
+    }
 
   },
-  
+
   computed:{
     searchProperties(){
       return this.$store.state.searchProperties

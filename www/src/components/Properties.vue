@@ -1,6 +1,6 @@
 <template>
   <div class="properties">
-    <button @click="createProperty">Add Property</button>
+    <button @click="">Add Property</button>
     <ul>
       <li v-for="property in properties"><router-link :to="'/properties/'+property._id">{{property.name}}</router-link> <span @click="removeProperty(property)">x</span></li>
     </ul>
@@ -10,9 +10,9 @@
 <script>
 export default {
   name: 'properties',
-  mounted(){
-    this.$store.dispatch('getProper')
-  },
+  // mounted(){
+  //   this.$store.dispatch('getProperty')
+  // },
   computed:{
     properties(){
       return this.$store.state.searchProperties

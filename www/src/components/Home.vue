@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-<!--<div class="container">-->
   <div class="row full-screen">
     <div class="cb-slideshow">
       <div class="button-container">
@@ -75,8 +74,9 @@
     </div>
     </div>
       <br>
-    <Featured></Featured>
-    <Properties></Properties>
+    <featured></featured>
+    <properties></properties>
+    <search></search>
   </div>
 </div>
 </div>
@@ -88,6 +88,7 @@
 <script>
     import Featured from './Featured'
     import Properties from './Properties'
+    import Search from './Search'
 
 export default {
   name: 'home',
@@ -100,7 +101,8 @@ export default {
         methods: {},
         components: {
             Featured,
-            Properties
+            Properties,
+            Search
         }
     }
 </script>
