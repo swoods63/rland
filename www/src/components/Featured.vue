@@ -2,13 +2,8 @@
   <div class="featured">
     <div class= "container">
       <div>
-
       </div>
-
     </div>
-
-
-
   </div>
 </template>
 

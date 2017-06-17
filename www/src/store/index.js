@@ -22,7 +22,8 @@ let auth = axios.create({
 let state = {
   properties: [],
   property: {},
-  user: {}
+  user: {},
+  searchProperties: []
 }
 
 let handleError = (state, err) => {
@@ -49,6 +50,9 @@ export default new Vuex.Store({
     },
     setAuth(state, Auth){
       state.Auth = Auth
+    }, 
+    setSearchProperties(state, searchProperties){
+      state.searchProperties = searchProperties
     }
   },
 
@@ -64,12 +68,19 @@ export default new Vuex.Store({
     },
 
     getProperty({commit, dispatch}, id) {
-
       api('properties/' + id)
         .then(res => {
           commit('setProperty', res.data.data)
         })
         .catch(handleError)
+    },
+
+    searchProperties({commit, dispatch}){
+      api('propertysearch')
+      .then(res => {
+        commit('setSearchProperties', res.data.data)
+      })
+      .catch(handleError)
     },
 
     createProperty({commit, dispatch}, property) {
@@ -111,16 +122,16 @@ export default new Vuex.Store({
         })
         .catch(handleError)
     },
+
     getAuth({commit, dispatch}) {
       auth('authenticate')
         .then(res => {
           commit('setAuth',  res.data.data)
           router.push('/Home')  
         }).catch(err => {
-          router.push('/login')
+          router.push('/Home')
         })
     },
-
 
     clearError({commit, dispatch}) {
       state.error = {}

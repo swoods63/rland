@@ -1,4 +1,5 @@
 <template>
+<div class="home">
   <div class="cb-slideshow">
     <div class="button-container">
       <div class="buttons t-shadow">
@@ -70,11 +71,12 @@
       </li>
     </ul>
   </div>
+</div>
 </template>
 
 <script>
 export default {
-  name: 'hello',
+  name: 'home',
   data() {
     return {
 
