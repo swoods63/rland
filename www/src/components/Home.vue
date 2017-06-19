@@ -77,6 +77,7 @@
     <featured></featured>
     <properties></properties>
     <search></search>
+    <types></types>
   </div>
 </div>
 </div>
@@ -89,6 +90,7 @@
     import Featured from './Featured'
     import Properties from './Properties'
     import Search from './Search'
+    import Types from './Types'
 
 export default {
   name: 'home',
@@ -102,7 +104,8 @@ export default {
         components: {
             Featured,
             Properties,
-            Search
+            Search,
+            Types
         }
     }
 </script>
