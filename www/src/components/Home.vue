@@ -76,8 +76,8 @@
       <br>
     <featured></featured>
     <properties></properties>
-    <search></search>
     <types></types>
+    <search></search>
   </div>
 </div>
 </div>
@@ -115,7 +115,7 @@ export default {
 <style scoped>
 
     .full-screen {
-        height: 80vh;
+        height: 140vh;
     }
     /* .text-yellow {
         color: #f5a608;
