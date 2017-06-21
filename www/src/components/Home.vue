@@ -105,7 +105,7 @@ export default {
             Featured,
             Properties,
             Search,
-            Types
+            Types 
         }
     }
 </script>
