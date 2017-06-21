@@ -1,86 +1,87 @@
 <template>
-  <div class="home">
-  <div class="row full-screen">
-    <div class="cb-slideshow">
-      <div class="button-container">
-        <div class="buttons t-shadow">
-          <div class="button">
-            <button>
+
+    <div class="home">
+        <div><p class="sitename">Recreationland.net</p></div>
+        <div class="row full-screen">
+            <div class="cb-slideshow col-xs-12">
+                <div class="button-container">
+                    <div class="buttons t-shadow">
+                        <div class="button">
+                            <button>
               <i class="fa fa-fw fa-envelope fa-3x t-shadow"></i>
             </button>
-            <h3>
-              Contact Us
-            </h3>
-          </div>
-          <div class="button">
-            <button>
+                            <h3>
+                                Contact Us
+                            </h3>
+                        </div>
+                        <div class="button">
+                            <button>
               <i class="fa fa-fw fa-home fa-3x t-shadow"></i>
             </button>
-            <h3>
-              Properties
-            </h3>
-          </div>
-          <div class="button">
-            <button>
+                            <h3>
+                                Properties
+                            </h3>
+                        </div>
+                        <div class="button">
+                            <button>
               <i class="fa fa-fw fa-user fa-3x t-shadow"></i>
             </button>
-            <h3>
-              Login
-            </h3>
-          </div>
+                            <h3>
+                                Login
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <span>Image 1</span>
+                    </li>
+                    <li>
+                        <span>Image 2</span>
+                    </li>
+                    <li>
+                        <span>Image 3</span>
+                    </li>
+                    <li>
+                        <span>Image 4</span>
+                    </li>
+                    <li>
+                        <span>Image 5</span>
+                    </li>
+                    <li>
+                        <span>Image 6</span>
+                    </li>
+                    <li>
+                        <span>Image 7</span>
+                    </li>
+                    <li>
+                        <span>Image 8</span>
+                    </li>
+                    <li>
+                        <span>Image 9</span>
+                    </li>
+                    <li>
+                        <span>Image 10</span>
+                    </li>
+                    <li>
+                        <span>Image 11</span>
+                    </li>
+                    <li>
+                        <span>Image 12</span>
+                    </li>
+                    <li>
+                        <span>Image 13</span>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <ul>
-        <li>
-          <span>Image 1</span>
-        </li>
-        <li>
-          <span>Image 2</span>
-        </li>
-        <li>
-          <span>Image 3</span>
-        </li>
-        <li>
-          <span>Image 4</span>
-        </li>
-        <li>
-          <span>Image 5</span>
-        </li>
-        <li>
-          <span>Image 6</span>
-        </li>
-        <li>
-          <span>Image 7</span>
-        </li>
-        <li>
-          <span>Image 8</span>
-        </li>
-        <li>
-          <span>Image 9</span>
-        </li>
-        <li>
-          <span>Image 10</span>
-        </li>
-        <li>
-          <span>Image 11</span>
-        </li>
-        <li>
-          <span>Image 12</span>
-        </li>
-        <li>
-          <span>Image 13</span>
-        </li>
-      </ul>
+        <br>
+        <featured></featured>
+        <properties></properties>
+        <types></types>
+        <search></search>
+        <g-map lat="51.2538" long="-85.3232"></g-map>
     </div>
-    </div>
-      <br>
-    <featured></featured>
-    <properties></properties>
-    <types></types>
-    <search></search>
-  </div>
-</div>
-</div>
 
 
 </template>
@@ -91,9 +92,10 @@
     import Properties from './Properties'
     import Search from './Search'
     import Types from './Types'
+    import GMap from './Map'
 
-export default {
-  name: 'home',
+    export default {
+        name: 'home',
 
 
         mounted() {
@@ -105,15 +107,16 @@ export default {
             Featured,
             Properties,
             Search,
-            Types 
+            Types,
+            GMap
         }
     }
+
 </script>
 
 
-//  Add "scoped" attribute to limit CSS to this component only
+// Add "scoped" attribute to limit CSS to this component only
 <style scoped>
-
     .full-screen {
         height: 140vh;
     }
@@ -181,6 +184,7 @@ export default {
         height: 1000px;
         top: 0px;
         left: 0px;
+        z-index: -10;
     }
 
     .cb-slideshow ul {
@@ -284,5 +288,11 @@ export default {
         100% {
             opacity: 0
         }
+    }
+
+    .sitename {
+        font-family: 'Dancing Script', cursive;
+        font-size: 100px;
+        color: orange;
     }
 </style>
