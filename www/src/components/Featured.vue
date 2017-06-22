@@ -16,9 +16,9 @@
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p2">
         <img class="img-responsive" src="static\Featured-imgs\olivier-guillard-49712.jpg">
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p3">
+      <!--<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p3">
         <img class="img-responsive" src="static\Featured-imgs\ryan-moreno-99473.jpg">
-      </div>
+      </div>-->
     </div>
     </div>
   </div>

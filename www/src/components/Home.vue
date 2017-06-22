@@ -73,7 +73,7 @@
                         <span>Image 13</span>
                     </li>
                 </ul>
-            </div>
+              </div>
         </div>
         <br>
         <featured></featured>
@@ -83,12 +83,7 @@
         <g-map lat="51.2538" long="-85.3232"></g-map>
         <myFooter></myFooter>
     </div>
-      <br>
-    <featured></featured>
-    <properties></properties>
-    <types></types>
-    <search></search>
-  </div>
+
 
 
 
@@ -129,7 +124,7 @@
 // Add "scoped" attribute to limit CSS to this component only
 <style scoped>
     .full-screen {
-        height:170vh;
+        height:70vh;
     }
     /* .text-yellow {
         color: #f5a608;
