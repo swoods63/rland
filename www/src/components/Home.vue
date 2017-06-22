@@ -81,6 +81,7 @@
         <types></types>
         <search></search>
         <g-map lat="51.2538" long="-85.3232"></g-map>
+        <myFooter></myFooter>
     </div>
 
 
@@ -93,6 +94,7 @@
     import Search from './Search'
     import Types from './Types'
     import GMap from './Map'
+    import myFooter from './myFooter'
 
     export default {
         name: 'home',
@@ -108,7 +110,8 @@
             Properties,
             Search,
             Types,
-            GMap
+            GMap,
+            myFooter
         }
     }
 
