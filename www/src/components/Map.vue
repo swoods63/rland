@@ -1,5 +1,5 @@
 <template>
-    <iframe class="g-map"
+    <iframe class="g-map center-block"
   frameborder="0" style="border:0"
   :src="url" allowfullscreen>
 </iframe>
@@ -18,7 +18,8 @@
 
 <style>
 .g-map{
-    width: 100%;
+    width: 80%;
     height: 600px;
+    
 }
 </style>
