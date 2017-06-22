@@ -79,8 +79,8 @@
     <types></types>
     <search></search>
   </div>
-</div>
-</div>
+
+
 
 
 </template>
@@ -89,8 +89,8 @@
 <script>
     import Featured from './Featured'
     import Properties from './Properties'
-    import Search from './Search'
     import Types from './Types'
+    import Search from './Search'
 
 export default {
   name: 'home',
@@ -115,7 +115,7 @@ export default {
 <style scoped>
 
     .full-screen {
-        height: 140vh;
+        height:170vh;
     }
     /* .text-yellow {
         color: #f5a608;

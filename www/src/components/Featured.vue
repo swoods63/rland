@@ -1,18 +1,25 @@
 <template>
   <div class="featured">
+   <div class="container-fluid">
     <div class="row FP">
-      <h2 class="text-center">Featured Property</h2>
+      <div class = "col-lg-12">
+        <p>Featured Property</p>
+      </div>
     </div>
     <div class="row properties">
-      <div class="col-md-4 p1">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p1">
         <img class="img-responsive" src="static\Featured-imgs\olivier-guillard-49712.jpg">
       </div>
-      <div class="col-md-4 p2">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p2">
         <img class="img-responsive" src="static\Featured-imgs\olivier-guillard-49712.jpg">
       </div>
-      <div class="col-md-4 p3">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p2">
+        <img class="img-responsive" src="static\Featured-imgs\olivier-guillard-49712.jpg">
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p3">
         <img class="img-responsive" src="static\Featured-imgs\ryan-moreno-99473.jpg">
       </div>
+    </div>
     </div>
   </div>
 </template>
@@ -36,24 +43,30 @@ export default {
 
 <style scoped>
 .FP {
-  padding-top: 20px;
-  padding: 50px;
-  border-bottom: 2px;
+  position: relative;
+  text-align:center;
+  font-size: 100px;
+  background-color: orange;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom:5px;
+
 }
 
 .featured {
-  padding-top: 20px;
-  padding: 50px;
+  /*padding-top: 10px;*/
+  padding: 20px;
   border-bottom: 2px;
+
 }
 
 
-h2 {
-  font-family:family=Dancing+Script;
-  font-size: 100px;
-  border: 5px solid red;
-  margin-left: 100px;
-  margin-right: 100px;
+p {
+  font-family: 'Lobster Two', cursive;
+  font-size: 70px;
+  /*border: 5px solid red;*/
+  /*margin-left: 100px;
+  margin-right: 100px;*/
 }
 
 
