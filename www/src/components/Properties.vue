@@ -10,6 +10,7 @@
 <script>
 export default {
   name: 'properties',
+
   // mounted(){
   //   this.$store.dispatch('getProperty')
   // },
@@ -19,6 +20,9 @@ export default {
     }
   },
   methods:{
+    createProperty(){
+      
+    }
 
   }
 }

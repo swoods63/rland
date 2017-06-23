@@ -1,9 +1,9 @@
 <template>
-
     <div class="home">
         <div><p class="sitename">Recreationland.net</p></div>
         <div class="row full-screen">
             <div class="cb-slideshow col-xs-12">
+
                 <div class="button-container">
                     <div class="buttons t-shadow">
                         <div class="button">
@@ -83,11 +83,6 @@
         <g-map lat="51.2538" long="-85.3232"></g-map>
         <myFooter></myFooter>
     </div>
-
-
-
-
-
 </template>
 
 
@@ -294,8 +289,7 @@
         100% {
             opacity: 0
         }
-    }
-
+    }    
     .sitename {
         font-family: 'Dancing Script', cursive;
         font-size: 100px;

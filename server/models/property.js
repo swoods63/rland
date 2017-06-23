@@ -5,6 +5,16 @@ let ObjectId = mongoose.Schema.ObjectId
 
 var schema = new mongoose.Schema({
 	name: {type: String, required: true},
+    lakefront: {type: Boolean},
+    riverfront: {type: Boolean},
+    huntingLand: {type: Boolean},
+    remoteAccess: {type: Boolean},
+    islands: {type: Boolean},
+    cabins: {type: Boolean},
+    developmentLand: {type: Boolean},
+    resorts: {type: Boolean},
+    hasStructure: {type: Boolean},
+    totalAcreage: {type: Number},
 	created: {type: Number, default: Date.now()},	
 	isSold: {type: Boolean},
     conditionalOffer: {type: Boolean},
@@ -53,7 +63,10 @@ var schema = new mongoose.Schema({
     occupants: {type: Number},
     howShown:  {type: String},
     salePrice: {type: Number},
-    saleDate: {type: Number}
+    saleDate: {type: Number},
+    accessRoad: {type: Boolean},
+    lat: {type: String},
+    long: {type: String}
 	
 });
 
