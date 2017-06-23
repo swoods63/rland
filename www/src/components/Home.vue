@@ -289,7 +289,7 @@
         100% {
             opacity: 0
         }
-
+    }    
     .sitename {
         font-family: 'Dancing Script', cursive;
         font-size: 100px;
