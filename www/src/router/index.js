@@ -11,6 +11,7 @@ import Contact from '../components/Contact'
 import Faqs from '../components/Faqs'
 import Privacy from '../components/Privacy'
 import Resources from '../components/Resources'
+import Map from '../components/Map'
 
 Vue.use(Router)
 
@@ -60,5 +61,10 @@ export default new Router({
         path: '/resources',
         name: 'Resources',
         component: Resources
-    }]
+    },
+    {
+        path: '/map',
+        name: 'Map',
+        component: Map
+   }]
 })

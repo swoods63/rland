@@ -1,7 +1,15 @@
 <template>
+<<<<<<< HEAD
     <div class="home">
         <div class="row full-screen">
             <div class="cb-slideshow">
+=======
+
+    <div class="home">
+        <div><p class="sitename">Recreationland.net</p></div>
+        <div class="row full-screen">
+            <div class="cb-slideshow col-xs-12">
+>>>>>>> e48df6ccf8be7f0fa33219e3372ef9cb8606fa71
                 <div class="button-container">
                     <div class="buttons t-shadow">
                         <div class="button">
@@ -71,6 +79,7 @@
                         <span>Image 13</span>
                     </li>
                 </ul>
+<<<<<<< HEAD
             </div>
         </div>
         <br>
@@ -79,12 +88,30 @@
     </div>
 
 
+=======
+              </div>
+        </div>
+        <br>
+        <featured></featured>
+        <properties></properties>
+        <types></types>
+        <search></search>
+        <g-map lat="51.2538" long="-85.3232"></g-map>
+        <myFooter></myFooter>
+    </div>
+
+
+
+
+
+>>>>>>> e48df6ccf8be7f0fa33219e3372ef9cb8606fa71
 </template>
 
 
 <script>
     import Featured from './Featured'
     import Properties from './Properties'
+<<<<<<< HEAD
 
     export default {
             
@@ -100,18 +127,41 @@
             }
     }
     
+=======
+    import Types from './Types'
+    import Search from './Search'
+    import GMap from './Map'
+    import myFooter from './myFooter'
+
+    export default {
+        name: 'home',
+
+
+        mounted() {
+            //this.$store.dispatch('getAuth')
+        },
+        computed: {},
+        methods: {},
+        components: {
+            Featured,
+            Properties,
+            Search,
+            Types,
+            GMap,
+            myFooter
+        }
+    }
+>>>>>>> e48df6ccf8be7f0fa33219e3372ef9cb8606fa71
 
 </script>
 
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+// Add "scoped" attribute to limit CSS to this component only
 <style scoped>
-    /*full-screen is the featured carousel this bring it down under the main screen*/
-
     .full-screen {
-        height: 80vh;
+        height:90vh;
     }
-    /*.text-yellow {
+    /* .text-yellow {
         color: #f5a608;
     }*/
 
@@ -175,6 +225,7 @@
         height: 1000px;
         top: 0px;
         left: 0px;
+        z-index: -10;
     }
 
     .cb-slideshow ul {
@@ -279,4 +330,14 @@
             opacity: 0
         }
     }
+<<<<<<< HEAD
 </style>
+=======
+
+    .sitename {
+        font-family: 'Dancing Script', cursive;
+        font-size: 100px;
+        color: orange;
+    }
+</style>
+>>>>>>> e48df6ccf8be7f0fa33219e3372ef9cb8606fa71

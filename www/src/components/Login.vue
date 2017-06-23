@@ -29,7 +29,11 @@
         </div>
       </div>
     </div>
+<<<<<<< HEAD
   </div>
+=======
+    </div>
+>>>>>>> e48df6ccf8be7f0fa33219e3372ef9cb8606fa71
 </template>
 
 

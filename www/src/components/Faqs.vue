@@ -1,42 +1,20 @@
 <template>
   <div class="faqs">
-<p>Frequently Asked Questions
+<h1>Frequently Asked Questions</h1>
 
-PLEASE NOTE THAT THE COMMENTS CONTAINED IN THIS QUESTIONS AND ANSWERS SECTION ARE FOR INFORMATION PURPOSES ONLY AND DO NOT CONSTITUTE LEGAL ADVICE.
+<h3 class = "note">PLEASE NOTE THAT THE COMMENTS CONTAINED IN THIS QUESTIONS AND ANSWERS SECTION ARE FOR INFORMATION PURPOSES ONLY AND DO NOT CONSTITUTE LEGAL ADVICE.</h3>
 
 
-OWNING PROPERTY IN CANADA
-
-1.
-
-I am not a Canadian citizen, ie: am an American citizen, can I buy land in Ontario?
-
-2.
-
-Are there any unusual taxes or levies for a non-resident buyer?
-
-3.
-
-Who handles my closing?
-
-4.
-
-How much will my lawyer cost? What are the closing costs?
-
-5.
-
-Do non-residents pay a different rate of land transfer tax when purchasing real property in Ontario?
-
-6.
-
-Buying property in Canada. How do I go about doing it?
-
-7.
-
-What about selling my property that I own in Canada?
-
-8.
-
+<h4>OWNING PROPERTY IN CANADA</h4>
+  <ol>
+    <li>I am not a Canadian citizen, ie: am an American citizen, can I buy land in Ontario?</li>
+    <li>Are there any unusual taxes or levies for a non-resident buyer?</li>
+    <li>Who handles my closing?</li>
+    <li>How much will my lawyer cost? What are the closing costs?</li>
+    <li>Do non-residents pay a different rate of land transfer tax when purchasing real property in Ontario?</li>
+    <li>Buying property in Canada. How do I go about doing it?</li>
+    <li>What about selling my property that I own in Canada?</li>
+  </ol>
 What about residency issues?
 
 
@@ -400,7 +378,7 @@ Ph: 807.626.6775
 steve_james@shaw.ca
 
 © 2002 - 2017 APEX Realty Services Ltd., Brokerage All rights reserved. 
-"Information on properties has been gained from our various resources including MPAC, Geowarehouse, Province of Ontario Mapping on-line, various specialized real estate mapping sources, Google Earth and other mapping software. We also have in-house software mapping information. This includes fish species, lake sizes, hunting information, access and local amenities. While we strive to relate factual information and illustrate property boundaries to our prospective buyers, this information is provided to the best of our knowledge and ability and may be subject to verification or legal survey. Our Web Site descriptions are solely provided or information purposes only" </p>
+"Information on properties has been gained from our various resources including MPAC, Geowarehouse, Province of Ontario Mapping on-line, various specialized real estate mapping sources, Google Earth and other mapping software. We also have in-house software mapping information. This includes fish species, lake sizes, hunting information, access and local amenities. While we strive to relate factual information and illustrate property boundaries to our prospective buyers, this information is provided to the best of our knowledge and ability and may be subject to verification or legal survey. Our Web Site descriptions are solely provided or information purposes only" </h1>
 
   </div>
 </template>
@@ -420,5 +398,7 @@ export default {
 
 
 <style scoped>
-
+.note{
+  color: red;
+}
 </style>
