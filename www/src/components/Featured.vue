@@ -50,12 +50,12 @@ export default {
   background-color: orange;
   margin-left: 0px;
   margin-right: 0px;
-  margin-bottom:5px;
+  margin-bottom:10px;
 
 }
 
 .featured {
-  /*padding-top: 10px;*/
+  /*padding-top: 20px;*/
   padding: 20px;
   border-bottom: 2px;
 
