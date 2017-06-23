@@ -1,15 +1,9 @@
 <template>
-<<<<<<< HEAD
-    <div class="home">
-        <div class="row full-screen">
-            <div class="cb-slideshow">
-=======
-
     <div class="home">
         <div><p class="sitename">Recreationland.net</p></div>
         <div class="row full-screen">
             <div class="cb-slideshow col-xs-12">
->>>>>>> e48df6ccf8be7f0fa33219e3372ef9cb8606fa71
+
                 <div class="button-container">
                     <div class="buttons t-shadow">
                         <div class="button">
@@ -79,16 +73,6 @@
                         <span>Image 13</span>
                     </li>
                 </ul>
-<<<<<<< HEAD
-            </div>
-        </div>
-        <br>
-        <Featured></Featured>
-        <Properties></Properties>
-    </div>
-
-
-=======
               </div>
         </div>
         <br>
@@ -99,35 +83,12 @@
         <g-map lat="51.2538" long="-85.3232"></g-map>
         <myFooter></myFooter>
     </div>
-
-
-
-
-
->>>>>>> e48df6ccf8be7f0fa33219e3372ef9cb8606fa71
 </template>
 
 
 <script>
     import Featured from './Featured'
     import Properties from './Properties'
-<<<<<<< HEAD
-
-    export default {
-            
-            name: 'home',
-            mounted() {
-                //this.$store.dispatch('getAuth')
-            },
-            computed: {},
-            methods: {},
-            components: {
-                Featured,
-                Properties
-            }
-    }
-    
-=======
     import Types from './Types'
     import Search from './Search'
     import GMap from './Map'
@@ -151,7 +112,6 @@
             myFooter
         }
     }
->>>>>>> e48df6ccf8be7f0fa33219e3372ef9cb8606fa71
 
 </script>
 
@@ -329,10 +289,6 @@
         100% {
             opacity: 0
         }
-    }
-<<<<<<< HEAD
-</style>
-=======
 
     .sitename {
         font-family: 'Dancing Script', cursive;
@@ -340,4 +296,3 @@
         color: orange;
     }
 </style>
->>>>>>> e48df6ccf8be7f0fa33219e3372ef9cb8606fa71
