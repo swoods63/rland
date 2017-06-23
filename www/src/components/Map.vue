@@ -20,6 +20,7 @@
 .g-map{
     width: 80%;
     height: 600px;
-    
+    margin-bottom: 20px;
+
 }
 </style>

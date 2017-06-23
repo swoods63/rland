@@ -7,13 +7,13 @@
       </div>
     </div>
     <div class="row properties">
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p1">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 p1">
         <img class="img-responsive" src="static\Featured-imgs\olivier-guillard-49712.jpg">
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p2">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 p2">
         <img class="img-responsive" src="static\Featured-imgs\olivier-guillard-49712.jpg">
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p2">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 p2">
         <img class="img-responsive" src="static\Featured-imgs\olivier-guillard-49712.jpg">
       </div>
       <!--<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p3">
