@@ -23,7 +23,8 @@ let state = {
   properties: [],
   property: {},
   user: {},
-  searchProperties: []
+  auth: {}
+  
 }
 
 let handleError = (state, err) => {
@@ -36,9 +37,7 @@ export default new Vuex.Store({
   //Mutations are the only thing alowed to update the store directly through store.propName
 
   mutations: {
-    setProperties(state, properties) {
-      state.properties = properties
-    },
+    
     setProperty(state, property) {
       state.property = property
     },
@@ -48,24 +47,26 @@ export default new Vuex.Store({
     setRegister(state, user) {
       state.user = user
     },
-    setAuth(state, Auth){
-      state.Auth = Auth
-    }, 
-    setSearchProperties(state, searchProperties){
-      state.searchProperties = searchProperties
+    setAuth(state, auth){
+      state.auth = auth
+    },
+    setProperties(state, properties){
+      console.log("Setting Properties", properties)
+      state.properties = properties
     }
+    
   },
 
   // ACTIONS ARE RESPONSIBLE FOR MANAGING ALL ASYNC REQUESTS
   // Dispatch fires actions, commit fires mutations
   actions: {
-    getProperties({commit, dispatch}) {
-      api('properties')
-        .then(res => {
-          commit('setProperties', res.data.data)
-        })
-        .catch(handleError)
-    },
+    // getProperties({commit, dispatch}) {
+    //   api('properties')
+    //     .then(res => {
+    //       commit('setProperties', res.data.data)
+    //     })
+    //     .catch(handleError)
+    // },
 
     getProperty({commit, dispatch}, id) {
       api('properties/' + id)
@@ -75,10 +76,10 @@ export default new Vuex.Store({
         .catch(handleError)
     },
 
-    searchProperties({commit, dispatch}){
-      api('propertysearch')
+    searchProperties({commit, dispatch}, query){
+      api.post('propertysearch', query)
       .then(res => {
-        commit('setSearchProperties', res.data.data)
+        commit('setProperties', res.data.data)
       })
       .catch(handleError)
     },
@@ -91,7 +92,7 @@ export default new Vuex.Store({
         .catch(handleError)
     },
 
-    removeProperty({commit, dispatch }, board) {
+    removeProperty({commit, dispatch }, property) {
       api.delete('properties/' + property._id)
         .then(res => {
           dispatch('getProperties')
@@ -99,7 +100,7 @@ export default new Vuex.Store({
         .catch(handleError)
     },    
 
-    login({ commit, dispatch }, user) {
+    login({commit, dispatch}, user) {
       auth.post('login', user)
         .then(res => {
           console.log(res)

@@ -2,12 +2,12 @@
 let env = {
 	NODE_ENV: 'development',
 	PORT: 3000,
-	DBPROTOCOL: 'mongodb',
-	DBUSERNAME: 'elio',
-	DBPASSWORD: 'rec4321',
-	DBHOST: 'ds123752.mlab.com:23752',
-	DBNAME: 'rland',
-	SERVERNAME: 'dev-server'
+	DBPROTOCOL: '',
+	DBUSERNAME: '',
+	DBPASSWORD: '',
+	DBHOST: '',
+	DBNAME: '',
+	SERVERNAME: ''
 }
 
 // MAPS env TO ACTUAL ENVIRONMENT

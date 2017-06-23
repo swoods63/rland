@@ -1,119 +1,106 @@
 <template>
-  <div class="home">
-<!--<div class="container">-->
-  <div class="row full-screen">
-    <div class="cb-slideshow">
-      <div class="button-container">
-        <div class="buttons t-shadow">
-          <div class="button">
-            <button>
+    <div class="home">
+        <div class="row full-screen">
+            <div class="cb-slideshow">
+                <div class="button-container">
+                    <div class="buttons t-shadow">
+                        <div class="button">
+                            <button>
               <i class="fa fa-fw fa-envelope fa-3x t-shadow"></i>
             </button>
-            <h3>
-              Contact Us
-            </h3>
-          </div>
-          <div class="button">
-            <button>
+                            <h3>
+                                Contact Us
+                            </h3>
+                        </div>
+                        <div class="button">
+                            <button>
               <i class="fa fa-fw fa-home fa-3x t-shadow"></i>
             </button>
-            <h3>
-              Properties
-            </h3>
-          </div>
-          <div class="button">
-            <button>
+                            <h3>
+                                Properties
+                            </h3>
+                        </div>
+                        <div class="button">
+                            <button>
               <i class="fa fa-fw fa-user fa-3x t-shadow"></i>
             </button>
-            <h3>
-              Login
-            </h3>
-          </div>
+                            <h3>
+                                Login
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <span>Image 1</span>
+                    </li>
+                    <li>
+                        <span>Image 2</span>
+                    </li>
+                    <li>
+                        <span>Image 3</span>
+                    </li>
+                    <li>
+                        <span>Image 4</span>
+                    </li>
+                    <li>
+                        <span>Image 5</span>
+                    </li>
+                    <li>
+                        <span>Image 6</span>
+                    </li>
+                    <li>
+                        <span>Image 7</span>
+                    </li>
+                    <li>
+                        <span>Image 8</span>
+                    </li>
+                    <li>
+                        <span>Image 9</span>
+                    </li>
+                    <li>
+                        <span>Image 10</span>
+                    </li>
+                    <li>
+                        <span>Image 11</span>
+                    </li>
+                    <li>
+                        <span>Image 12</span>
+                    </li>
+                    <li>
+                        <span>Image 13</span>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <ul>
-        <li>
-          <span>Image 1</span>
-        </li>
-        <li>
-          <span>Image 2</span>
-        </li>
-        <li>
-          <span>Image 3</span>
-        </li>
-        <li>
-          <span>Image 4</span>
-        </li>
-        <li>
-          <span>Image 5</span>
-        </li>
-        <li>
-          <span>Image 6</span>
-        </li>
-        <li>
-          <span>Image 7</span>
-        </li>
-        <li>
-          <span>Image 8</span>
-        </li>
-        <li>
-          <span>Image 9</span>
-        </li>
-        <li>
-          <span>Image 10</span>
-        </li>
-        <li>
-          <span>Image 11</span>
-        </li>
-        <li>
-          <span>Image 12</span>
-        </li>
-        <li>
-          <span>Image 13</span>
-        </li>
-      </ul>
+        <br>
+        <Featured></Featured>
+        <Properties></Properties>
     </div>
-    </div>
-      <br>
-    <Featured></Featured>
-    <Properties></Properties>
-  </div>
-<<<<<<< HEAD
-</div>
-=======
-  <!--</div>-->
 
 
->>>>>>> 9dbb25d1e01ec02aaa56fdb615f62e20e411ff1e
 </template>
 
 
 <script>
-<<<<<<< HEAD
-export default {
-  name: 'home',
-  data() {
-    return {
-=======
     import Featured from './Featured'
     import Properties from './Properties'
 
->>>>>>> 9dbb25d1e01ec02aaa56fdb615f62e20e411ff1e
-
-
-
     export default {
-        name: 'home',
-        mounted() {
-            //this.$store.dispatch('getAuth')
-        },
-        computed: {},
-        methods: {},
-        components: {
-            Featured,
-            Properties
-        }
+            
+            name: 'home',
+            mounted() {
+                //this.$store.dispatch('getAuth')
+            },
+            computed: {},
+            methods: {},
+            components: {
+                Featured,
+                Properties
+            }
     }
+    
+
 </script>
 
 
