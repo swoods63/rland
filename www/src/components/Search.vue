@@ -2,6 +2,11 @@
   <div class="search">
     <div class="container">
       <div class="row">
+        <div class="col-sm-12 text-center">
+          <h3><button class="btn btn-white btn" @click="showForm = !showForm">Find Property</button></h3>
+        </div>
+      </div>
+      <div class="row" v-if="showForm">
         <div class="col-xs-12">
           <form @submit.prevent="searchProperties">
             <div class="row">
@@ -48,6 +53,7 @@
     name: 'search',
     data() {
       return {
+        showForm: false,
         min: 0,
         max: 0,
         query: {},
@@ -150,5 +156,20 @@
 
 
 <style scoped>
+
+.btn-white{
+  transition: all .3s ease;
+  background: #d8d8d8;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 0;
+}
+.btn-white:hover{
+  background: #efefef;
+  transform: scale(1.2);
+}
+
+
 
 </style>
