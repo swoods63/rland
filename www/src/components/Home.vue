@@ -124,7 +124,7 @@
 // Add "scoped" attribute to limit CSS to this component only
 <style scoped>
     .full-screen {
-        height:90vh;
+        height:130vh;
     }
     /* .text-yellow {
         color: #f5a608;
