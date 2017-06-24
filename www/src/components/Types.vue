@@ -2,30 +2,12 @@
   <div class="types">
     <hr class="hr">
     <div class="container-fluid">
-      <div class="row types2">
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p1">
-          <img class="img-responsive" src="..\..\static\Properties-img\100_4733 (2) LF.jpg"><h3>Lake Front</h3>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p2">
-          <img class="img-responsive" src="..\..\static\Properties-img\1426710859_lg RF.jpg"><h3>River Front</h3>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p3">
-          <img class="img-responsive" src="..\..\static\Properties-img\1488212429_lg HL.jpg"><h3>Hunting Land</h3>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p4">
-          <img class="img-responsive" src="..\..\static\Properties-img\Islands.jpg"><h3>Islands</h3>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p5 text-center">
-          <img class="img-responsive" src="..\..\static\Properties-img\1288384066_lg Cottage.jpg"><h3>Cottages/Cabins</h3>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p6">
-          <img class="img-responsive" src="..\..\static\Properties-img\1355346997_lg DL.jpg"><h3>Development</h3>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p7">
-          <img class="img-responsive" src="..\..\static\Properties-img\1464281988_lg Resort.jpg"><h3>Resorts</h3>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p8">
-          <img class="img-responsive" src="..\..\static\Properties-img\pic 14 (2) Remote.jpg"><h3>Remote Access</h3>
+      <div class="row types2 property-types">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-2" v-for="propType in types">
+          <div class="property-type">
+            <img class="img-responsive" :src="propType.img">
+            <h3>{{propType.type}}</h3>
+          </div>
         </div>
       </div>
     </div>
@@ -34,57 +16,90 @@
 
 
 <script>
-export default {
-  name: 'Types',
-  data() {
-    return{}
-  },
-  computed: {},
-  methods: {},
-  components: {}
-}
+  export default {
+    name: 'Types',
+    data() {
+      return {
+        types: [{
+          img: '../../static/Properties-img/100_4733 (2) LF.jpg',
+          type: 'Lake Front'
+        }, {
+          img: "../../static/Properties-img/1426710859_lg RF.jpg",
+          type: "River Front"
+        }, {
+          img: "../../static/Properties-img/1488212429_lg HL.jpg",
+          type: "Hunting Land"
+        }, {
+          img: '../../static/Properties-img/Islands.jpg',
+          type: 'Islands'
+        }, {
+          img: "../../static/Properties-img/1288384066_lg Cottage.jpg",
+          type: "Cottages/Cabins"
+        }, {
+          img: "../../static/Properties-img/1355346997_lg DL.jpg",
+          type: "Development"
+        }, {
+          img: '../../static/Properties-img/1464281988_lg Resort.jpg',
+          type: 'Resorts'
+        }, {
+          img: "../../static/Properties-img/pic 14 (2) Remote.jpg",
+          type: "Remote Access"
+        }]
+      }
+    },
+    computed: {},
+    methods: {},
+    components: {}
+  }
+
 </script>
 
 
 <style scoped>
-.row {
-  margin: auto;
-  padding-top: 20px;
-  padding: 30px;
-  border-bottom: 2px;
-}
+  .p-2{
+    padding: 2rem;
+  }
+  .row {
+    margin: auto;
+    padding-top: 20px;
+    padding: 30px;
+    border-bottom: 2px;
+  }
 
-.img-responsive {
-  margin: auto;
-  height: 200px;
-  width: 350px;
+  .img-responsive {
+    margin: auto;
+    height: 200px;
+    width: 350px;
+  }
 
-}
+  h3 {
+    position: relative;
+    text-align: center;
+    top: -60px;
+    color: White;
+    z-index: 10;
+  }
 
-h3{
-  position: relative;
-  text-align:center;
-  top: -60px;
-  color: White;
-  z-index: 10;
+  hr {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5px;
+    border-width: 3px;
+    padding-bottom: 5px;
+    background-color: #f5a608;
+  }
 
+  .type2 {
+    display: inline-block;
+    vertical-align: top;
+    width: 75%;
+  }
 
-}
-
-hr {
- margin-left:10%;
- margin-right:10%;
- margin-top: 5px;
- border-width:3px;
- padding-bottom:5px;
- background-color: #f5a608;
-
-}
-
-.type2 {
-  display: inline-block;
-  vertical-align: top;
-  width: 75%;
-}
-
+  .property-type img {
+    background: #fff;
+    padding: .5rem;
+  }
+  .property-type h3{
+    text-shadow: 1px 1px 1px #000;
+  }
 </style>

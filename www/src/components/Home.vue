@@ -1,88 +1,102 @@
 <template>
-    <div class="home">
-        <div><p class="sitename">Recreationland.net</p></div>
+<div>
+    <div class="container-fluid">
         <div class="row full-screen">
-            <div class="cb-slideshow col-xs-12">
-
-                <div class="button-container">
-                    <div class="buttons t-shadow">
-                        <div class="button">
-                            <button>
-              <i class="fa fa-fw fa-envelope fa-3x t-shadow"></i>
-            </button>
-                            <h3>
-                                Contact Us
-                            </h3>
-                        </div>
-                        <div class="button">
-                            <button>
-              <i class="fa fa-fw fa-home fa-3x t-shadow"></i>
-            </button>
-                            <h3>
-                                Properties
-                            </h3>
-                        </div>
-                        <div class="button">
-                            <button>
-              <i class="fa fa-fw fa-user fa-3x t-shadow"></i>
-            </button>
-                            <h3>
-                                Login
-                            </h3>
+            <div><h2 class="sitename">Recreationland.net</h2></div>
+            <div class="">
+                <div class="cb-slideshow col-xs-12">
+                    <div class="button-container">
+                        <div class="buttons t-shadow">
+                            <div class="button">
+                                <button>
+                <i class="fa fa-fw fa-envelope fa-3x t-shadow"></i>
+                </button>
+                                <h3>
+                                    Contact Us
+                                </h3>
+                            </div>
+                            <div class="button">
+                                <button>
+                <i class="fa fa-fw fa-home fa-3x t-shadow"></i>
+                </button>
+                                <h3>
+                                    Properties
+                                </h3>
+                            </div>
+                            <div class="button">
+                                <button>
+                <i class="fa fa-fw fa-user fa-3x t-shadow"></i>
+                </button>
+                                <h3>
+                                    Login
+                                </h3>
+                            </div>
                         </div>
                     </div>
+                    <ul>
+                        <li>
+                            <span>Image 1</span>
+                        </li>
+                        <li>
+                            <span>Image 2</span>
+                        </li>
+                        <li>
+                            <span>Image 3</span>
+                        </li>
+                        <li>
+                            <span>Image 4</span>
+                        </li>
+                        <li>
+                            <span>Image 5</span>
+                        </li>
+                        <li>
+                            <span>Image 6</span>
+                        </li>
+                        <li>
+                            <span>Image 7</span>
+                        </li>
+                        <li>
+                            <span>Image 8</span>
+                        </li>
+                        <li>
+                            <span>Image 9</span>
+                        </li>
+                        <li>
+                            <span>Image 10</span>
+                        </li>
+                        <li>
+                            <span>Image 11</span>
+                        </li>
+                        <li>
+                            <span>Image 12</span>
+                        </li>
+                        <li>
+                            <span>Image 13</span>
+                        </li>
+                    </ul>
                 </div>
-                <ul>
-                    <li>
-                        <span>Image 1</span>
-                    </li>
-                    <li>
-                        <span>Image 2</span>
-                    </li>
-                    <li>
-                        <span>Image 3</span>
-                    </li>
-                    <li>
-                        <span>Image 4</span>
-                    </li>
-                    <li>
-                        <span>Image 5</span>
-                    </li>
-                    <li>
-                        <span>Image 6</span>
-                    </li>
-                    <li>
-                        <span>Image 7</span>
-                    </li>
-                    <li>
-                        <span>Image 8</span>
-                    </li>
-                    <li>
-                        <span>Image 9</span>
-                    </li>
-                    <li>
-                        <span>Image 10</span>
-                    </li>
-                    <li>
-                        <span>Image 11</span>
-                    </li>
-                    <li>
-                        <span>Image 12</span>
-                    </li>
-                    <li>
-                        <span>Image 13</span>
-                    </li>
-                </ul>
-              </div>
+            </div>
         </div>
-        <br>
-        <featured></featured>
-        <properties></properties>
-        <types></types>
-        <search></search>
-        <g-map lat="51.2538" long="-85.3232"></g-map>
-        <myFooter></myFooter>
     </div>
+    <div class="container-fluid bg-green">
+        <div class="row">
+            <featured></featured>
+        </div>
+        <div class="row">
+            <properties></properties>
+        </div>
+        <div class="row">
+            <types></types>
+        </div>
+        <div class="row bg-red">
+            <search></search>
+        </div>
+        <div class="row b-divider">
+            <g-map lat="51.2538" long="-85.3232"></g-map>
+        </div>
+    </div>
+    <myFooter></myFooter>
+</div>
 </template>
 
 
@@ -119,7 +133,23 @@
 // Add "scoped" attribute to limit CSS to this component only
 <style scoped>
     .full-screen {
-        height:90vh;
+        height:1000px;
+    }
+
+    .bg-red{
+        background: #50A879;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        color: aliceblue;
+    }
+
+    .b-divider{
+        border-bottom: 1px solid #252525;
+    }
+    .bg-green{
+        background-color: #3b423a;
     }
     /* .text-yellow {
         color: #f5a608;
@@ -289,10 +319,10 @@
         100% {
             opacity: 0
         }
-    }    
+    }
+
     .sitename {
         font-family: 'Dancing Script', cursive;
-        font-size: 100px;
         color: orange;
     }
 </style>

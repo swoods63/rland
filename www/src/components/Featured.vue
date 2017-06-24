@@ -6,7 +6,7 @@
         <p>Featured Property</p>
       </div>
     </div>
-    <div class="row properties">
+    <div class="row properties property-feat">
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 p1">
         <img class="img-responsive" src="static\Featured-imgs\olivier-guillard-49712.jpg">
       </div>
@@ -50,12 +50,12 @@ export default {
   background-color: orange;
   margin-left: 0px;
   margin-right: 0px;
-  margin-bottom:5px;
+  margin-bottom:10px;
 
 }
 
 .featured {
-  /*padding-top: 10px;*/
+  /*padding-top: 20px;*/
   padding: 20px;
   border-bottom: 2px;
 
@@ -70,8 +70,10 @@ p {
   margin-right: 100px;*/
 }
 
-
-
+.property-feat img{
+    background: #fff;
+    padding: .5rem;
+  }
 
 
 </style>

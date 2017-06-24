@@ -39,10 +39,9 @@
 
 <style>
   .myFooter {
-    background: url("../assets/ryan-moreno-99473.jpg");
-    background-size: cover;
-    height: 270px;
-    font-size: 25px;
+    background: #0f0e19;
+    border-top: 1px solid black;
+    padding: 3rem;
   }
 
   .list-flex {
@@ -50,7 +49,8 @@
   }
 
   li {
-    margin: 30px;
+    margin: 3rem 1.5rem 0 0;
+    font-size: 2rem;
   }
   li a{
     color: orange;
@@ -59,4 +59,10 @@
     color: #ffcc6f;
     text-decoration: none;
   }
+
+  @media screen and (max-width: 500px) {
+      .list-inline li {
+          display: block;
+      }
+    }
 </style>
