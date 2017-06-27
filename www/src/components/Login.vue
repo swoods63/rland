@@ -1,13 +1,13 @@
 <template>
   <div class="login">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-4 col-md-offset-4">
-          <div class="panel panel-default">
+          <div class="panel panel-default center">
             <div class="panel-heading">
-              <h3 class="panel-title">Welcome to my site</h3>
+              <p class="panel-title text-center">Login</p>
             </div>
-            <div class="panel-body">
+            <div class="panel-body text-center">
               <form role="form" @submit.prevent="register">
                 <fieldset>
                 <div class="form-group">
@@ -21,7 +21,7 @@
                   </div>
                   <!-- Change this to a button or input when using this as a form -->
                   <button type="submit" class="btn btn-success btn-block">Login</button>
-                  <p>New Member? <a class="">Sign up</a></p>
+                 
                 </fieldset>
               </form>
             </div>
@@ -56,5 +56,32 @@
 
 
 <style scoped>
+.panel{
+  margin-top: 275px;
+  margin-bottom: 500px;
+  width: 500px;
+  height: 480px;
+}
+.panel-title{
+  color: black;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+.container-fluid{
+  background-color: black;
+}
+p{
+  font-size:32px;
+  color: #eeeeee;
+  padding-top: 50px;
+  padding-left: 25px;
+}
+.form-control{
+  height: 60px;
+}
+.btn{
+  height: 60px;
+  font-size: 24px;
+}
 
 </style>
