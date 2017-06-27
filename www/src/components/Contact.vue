@@ -56,9 +56,6 @@
         </div>
       </div>
     </section>
-
-  </div>
-
   </div>
 </template>
 
@@ -190,8 +187,6 @@
     height: 20px;
     background: #ffffff;
   }
-
-
 </style>
-<!--This url below is for a map that sits behind the contact information boxes.
- <!--url('http://artdnaswitchbd.com/componants/images/map-image.png')-->
+
+

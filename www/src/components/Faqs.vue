@@ -1,25 +1,31 @@
 <template>
   <div class="faqs">
-<h1>Frequently Asked Questions</h1>
+<h1><strong>Frequently Asked Questions</strong></h1>
 
-<h3 class = "note">PLEASE NOTE THAT THE COMMENTS CONTAINED IN THIS QUESTIONS AND ANSWERS SECTION ARE FOR INFORMATION PURPOSES ONLY AND DO NOT CONSTITUTE LEGAL ADVICE.</h3>
+<h4 class = "note">PLEASE NOTE THAT THE COMMENTS CONTAINED IN THIS QUESTIONS AND ANSWERS SECTION ARE FOR INFORMATION PURPOSES ONLY AND DO NOT CONSTITUTE LEGAL ADVICE.</h4>
 
 
-<h4>OWNING PROPERTY IN CANADA</h4>
+<h3><strong>OWNING PROPERTY IN CANADA</strong></h3>
   <ol>
-    <li>I am not a Canadian citizen, ie: am an American citizen, can I buy land in Ontario?</li>
-    <li>Are there any unusual taxes or levies for a non-resident buyer?</li>
-    <li>Who handles my closing?</li>
-    <li>How much will my lawyer cost? What are the closing costs?</li>
+    <li>I am not a Canadian citizen, ie: am an American citizen, can I buy land in Ontario? <h4>Yes you can. You are treated just like a resident buyer. The bottom line is that buying real estate in Canada is very easy.</h4></li>
+
+
+    <li>Are there any unusual taxes or levies for a non-resident buyer?<h4>No. Sometimes if the property is being sold by a company or by a person who is in the business of buying and selling land, a Goods and Services Tax (GST) of seven (7) percent of the purchase price is applicable. This tax is collected by the lawyer and remitted to the Canadian Government. If applicable, this tax is paid by the buyer, whether they are Canadian citizens or not.
+    </h4></li>
+
+
+    <li>Who handles my closing?<h4>In Canada, closings are done by Canadian lawyers, the buyer has a lawyer and the seller has a lawyer. You should get a lawyer from the jurisdiction you are buying in.</h4></li>
+
+    <li>How much will my lawyer cost? What are the closing costs?<h4></h4></li>
     <li>Do non-residents pay a different rate of land transfer tax when purchasing real property in Ontario?</li>
     <li>Buying property in Canada. How do I go about doing it?</li>
     <li>What about selling my property that I own in Canada?</li>
+    <li>What about residency issues?</li>
   </ol>
-What about residency issues?
 
 
+<h3><strong>PROPERTY RIGHTS, HISTORICAL CONTEXT</strong></h3>
 
-PROPERTY RIGHTS, HISTORICAL CONTEXT
 
 9.
 
@@ -93,7 +99,7 @@ I am not a Canadian citizen, ie: am an American citizen, can I buy land in Ontar
 
 A.
 
-Yes you can. You are treated just like a resident buyer. The bottom line is that buying real estate in Canada is very easy.
+
 
 Q.
 
@@ -305,7 +311,7 @@ Can I bring firearms into Canada?
 
 A.
 
-Bringing a Firearm into Canada 
+Bringing a Firearm into Canada
 You may bring a hunting rifle or shotgun and up to 200 rounds of ammunition into Ontario as a visitor, but you must be 18 years of age or older to do so and the firearms must be for hunting or competitions use. You must be at least 18 years of age to bring firearms into Canada.
 
 You must either have a Canadian Possession and Acquisition License (PAL) or you have to register your firearms at the Canadian border. You are able to complete pre-registration forms before you cross the border which will make it easier and less time consuming. The permit fee is $50.00 (Cdn) per person for a temporary registration permit and the permit is valid for 12 months. Call toll-free 1-800-731-4000 to get a Firearms Declaration Form. Easiest way to obtain a Canadian PAL (possession and Acquisition License) prior to importing guns into Canada. If you have a PAL, you do not have to fill out registration forms and there is only a one time fee.
@@ -316,8 +322,8 @@ Restricted firearms such as pistols or revolvers may be temporarily imported if 
 
 Seasonal residents may import restricted firearms, but must have a Possession and Acquisition License or a valid Firearms Acquisition Certificate in addition to an ATT.
 
-For more info on importing firearms into Canada: 
-Canadian Firearms Centre, 284 Wellington Centre. Ottawa, ON K1A 0H8. 
+For more info on importing firearms into Canada:
+Canadian Firearms Centre, 284 Wellington Centre. Ottawa, ON K1A 0H8.
 Ph: 1-800-731-4000. canada.firearms@justice.gc.ca
 
 Q.
@@ -337,7 +343,7 @@ Canada Customs and Immigration officers are members of Child Find International.
 Other Countries:
 Visitors from countries other than the US require a valid passport and in some cases a visitor's visa. Visas are issued by Canadian Immigration offices, embassies and consulates.
 
-Making a Declaration 
+Making a Declaration
 Canadian Customs officials will ask your place of residence (country and city) the purpose of your visit to Canada, how long you intend to stay, and if you have anything to declare. You may be asked specifically if you are bringing alcohol, tobacco, fruit, vegetables, animals or items made from animal by-products, firearms or personal protection devices into Canada.
 
 Gifts up to $60 (Canadian funds) each in value are duty free provided they do not contain alcohol, tobacco or advertising material.
@@ -350,7 +356,7 @@ Dogs and cats accompanying their owners from the U.S. must have current (within 
 Boaters
 Pleasure craft may enter Canada by trailer or under their own power and stay for a period of up to 12 months. The required Entry Permit is obtainable from Customs at port-of-entry. All boats powered by motors 10 HP or over must be licensed and the license number clearly indicated on the bow of the vessel. Boat licenses from outside Ontario are acceptable.
 
-Criminal records 
+Criminal records
 Individuals with criminal records wishing to enter Canada can apply for a waiver. This should be done 3 - 4 weeks in advance of the intended visit. It should be noted that Driving Under the Influence convictions are considered a criminal offense in Canada. Individuals with criminal records without waivers can be refused entry. Contact the nearest port of entry Canada Immigration office for more information.
 
 YOUR DOLLAR GOES FURTHER
@@ -360,7 +366,7 @@ Goods and Services Tax (GST)
 As a visitor to Canada you can claim a refund of 7% on every dollar spent while in the country on accommodation and most goods you take home.
 
 APEX Realty Services Ltd., Brokerage
-391 OLIVER ROAD, 
+391 OLIVER ROAD,
 Thunder Bay, Ontario
 Canada
 
@@ -377,7 +383,7 @@ Steve James, Sales Representative
 Ph: 807.626.6775
 steve_james@shaw.ca
 
-© 2002 - 2017 APEX Realty Services Ltd., Brokerage All rights reserved. 
+© 2002 - 2017 APEX Realty Services Ltd., Brokerage All rights reserved.
 "Information on properties has been gained from our various resources including MPAC, Geowarehouse, Province of Ontario Mapping on-line, various specialized real estate mapping sources, Google Earth and other mapping software. We also have in-house software mapping information. This includes fish species, lake sizes, hunting information, access and local amenities. While we strive to relate factual information and illustrate property boundaries to our prospective buyers, this information is provided to the best of our knowledge and ability and may be subject to verification or legal survey. Our Web Site descriptions are solely provided or information purposes only" </h1>
 
   </div>
@@ -400,5 +406,8 @@ export default {
 <style scoped>
 .note{
   color: red;
+}
+h4{
+  color:blue;
 }
 </style>
