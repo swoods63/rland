@@ -64,7 +64,7 @@
   export default {
     name: "contact",
     data() {
-
+      return {}
     },
     computed: {},
     methods: {},

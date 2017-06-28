@@ -10,9 +10,6 @@
             <div class="panel-body text-center">
               <form role="form" @submit.prevent="register">
                 <fieldset>
-                <div class="form-group">
-                    <input class="form-control" placeholder="Name" type="text" autofocus v-model="user.name">
-                  </div>
                   <div class="form-group">
                     <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus v-model="user.email">
                   </div>
@@ -21,7 +18,7 @@
                   </div>
                   <!-- Change this to a button or input when using this as a form -->
                   <button type="submit" class="btn btn-success btn-block">Login</button>
-                 
+                 <p class="reg">Not Registered Yet? <b v-on:click="register">Click here.</b></p>
                 </fieldset>
               </form>
             </div>
@@ -37,7 +34,7 @@
     name: "login",
     data() {
       return{
-        user:{}
+        user:{email:"", password:""}
       }
     },
     computed: {},
@@ -60,7 +57,7 @@
   margin-top: 275px;
   margin-bottom: 500px;
   width: 500px;
-  height: 480px;
+  height: 460px;
 }
 .panel-title{
   color: black;
@@ -77,11 +74,15 @@ p{
   padding-left: 25px;
 }
 .form-control{
-  height: 60px;
+  height: 70px;
 }
 .btn{
   height: 60px;
   font-size: 24px;
+}
+.reg{
+  font-size:26px;
+  color: red;
 }
 
 </style>

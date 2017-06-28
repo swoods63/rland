@@ -3,33 +3,32 @@
     <div class="container-fluid">
         <div class="row full-screen">
             <div class="sitename">Recreationland.net</div>
-            <div class="">
+            <div class=""></div>
+
+
+            
                 <div class="cb-slideshow col-xs-12">
                     <div class="button-container">
                         <div class="buttons t-shadow">
+
                             <div class="button">
-                                <button>
-                <i class="fa fa-fw fa-envelope fa-3x t-shadow"></i>
-                </button>
-                                <h3>
-                                    Contact Us
-                                </h3>
+                                <router-link to="/contact">
+                                    <button><i class="fa fa-fw fa-envelope fa-3x t-shadow"></i></button>
+                                </router-link>   
+                                <h3>Contact Us</h3>
                             </div>
-                            <div class="button">
-                                <button>
-                <i class="fa fa-fw fa-home fa-3x t-shadow"></i>
+
+                            <div class="button" id="p4">
+                <button a href="properties"><i class="fa fa-fw fa-home fa-3x t-shadow"></i>
                 </button>
-                                <h3>
-                                    Properties
-                                </h3>
+                                <h3>Properties</h3>
                             </div>
-                            <div class="button">
-                                <button>
-                <i class="fa fa-fw fa-user fa-3x t-shadow"></i>
-                </button>
-                                <h3>
-                                    Login
-                                </h3>
+
+                            <div class="button">               
+                                <router-link to="/login">
+                                    <button><i class="fa fa-fw fa-user fa-3x t-shadow"></i></button>
+                                </router-link>
+                                <h3>Login</h3>
                             </div>
                         </div>
                     </div>
@@ -75,7 +74,6 @@
                         </li>
                     </ul>
                 </div>
-            </div>
         </div>
     </div>
     <div class="container-fluid bg-green">
@@ -110,13 +108,23 @@
 
     export default {
         name: 'home',
-
+        data() {
+      return{
+    }
+    },
 
         mounted() {
             //this.$store.dispatch('getAuth')
         },
         computed: {},
-        methods: {},
+        methods: {
+            contact(){},
+            properties(){},
+            login(){}
+
+
+        },
+            
         components: {
             Featured,
             Properties,
