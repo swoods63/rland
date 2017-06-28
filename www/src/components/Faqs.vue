@@ -1,26 +1,79 @@
 <template>
   <div class="faqs">
-<h1><strong>Frequently Asked Questions</strong></h1>
+    <h1><strong>Frequently Asked Questions</strong>
+    </h1>
 
-<h4 class = "note">PLEASE NOTE THAT THE COMMENTS CONTAINED IN THIS QUESTIONS AND ANSWERS SECTION ARE FOR INFORMATION PURPOSES ONLY AND DO NOT CONSTITUTE LEGAL ADVICE.</h4>
-
-
-<h3><strong>OWNING PROPERTY IN CANADA</strong></h3>
-  <ol>
-    <li>I am not a Canadian citizen, ie: am an American citizen, can I buy land in Ontario? <h4>Yes you can. You are treated just like a resident buyer. The bottom line is that buying real estate in Canada is very easy.</h4></li>
+      <h4 class = "note">PLEASE NOTE THAT THE COMMENTS CONTAINED IN THIS QUESTIONS AND ANSWERS SECTION ARE FOR INFORMATION PURPOSES ONLY AND DO NOT CONSTITUTE LEGAL ADVICE.
+      </h4>
 
 
-    <li>Are there any unusual taxes or levies for a non-resident buyer?<h4>No. Sometimes if the property is being sold by a company or by a person who is in the business of buying and selling land, a Goods and Services Tax (GST) of seven (7) percent of the purchase price is applicable. This tax is collected by the lawyer and remitted to the Canadian Government. If applicable, this tax is paid by the buyer, whether they are Canadian citizens or not.
-    </h4></li>
+  <h3><strong>OWNING PROPERTY IN CANADA</strong>
+  </h3>
+    <ol>
+      <li>I am not a Canadian citizen, ie: am an American citizen, can I buy land in Ontario? 
+        <h4>
+          Yes you can. You are treated just like a resident buyer. The bottom line is that buying real estate in Canada is very easy.
+        </h4>
+      </li>
 
 
-    <li>Who handles my closing?<h4>In Canada, closings are done by Canadian lawyers, the buyer has a lawyer and the seller has a lawyer. You should get a lawyer from the jurisdiction you are buying in.</h4></li>
+      <li>
+        Are there any unusual taxes or levies for a non-resident buyer?
+        <h4>
+          No. Sometimes if the property is being sold by a company or by a person who is in the business of buying and selling land, a Goods and Services Tax (GST) of seven (7) percent of the purchase price is applicable. This tax is collected by the lawyer and remitted to the Canadian Government. If applicable, this tax is paid by the buyer, whether they are Canadian citizens or not.
+        </h4>
+      </li>
 
-    <li>How much will my lawyer cost? What are the closing costs?<h4></h4></li>
-    <li>Do non-residents pay a different rate of land transfer tax when purchasing real property in Ontario?</li>
-    <li>Buying property in Canada. How do I go about doing it?</li>
-    <li>What about selling my property that I own in Canada?</li>
-    <li>What about residency issues?</li>
+
+      <li>
+       Who handles my closing?
+        <h4>
+          In Canada, closings are done by Canadian lawyers, the buyer has a lawyer and the seller has a lawyer. You should get a lawyer from the jurisdiction you are buying in.
+        </h4></li>
+
+      <li>
+        How much will my lawyer cost? What are the closing costs?<h4>Closing costs are made up of three costs:</h4>
+        <ol>
+        <li class="answer"> 
+          Land Transfer Tax (LTT): This is collected by the lawyer and remitted to the Provincial      Government.
+          <br> For calculating this tax, the purchase price is converted to Canadian Dollars. <br>The formula for this tax is $5 per thousand for the first $55,000
+          <br>$10 per thousand for the next $145,000<br>
+          example:<br>
+          for a purchase price of $50,000, the LTT would be $200 Cdn..<br>
+          For a purchase price of $80,000, the LTT would be $525 Cdn.
+        </li>
+        <li class="answer">
+          Disbursements: This would include, long distance call, courier costs, title searches photo copies,stamps, seals etc. Typically these costs average in the $250 to $300 Cdn range.
+        </li>
+        <li class="answer">
+          Legal Fees: This fee would be what the lawyer actually charges you for his time to handle your transaction. This fee would be what you negotiate with the lawyer. It is a good idea to check with 2 or 3 lawyers as some are more negotiable than others. They all have to do the same work and guarantee title for you. His job is to ensure that you are actually buying the property you think you are.<br>
+          He reviews the Title Search on the property with you, explains the terminology and ensures that you have clear title to the property. Typical costs would range from $700 to $1,500 depending on the amount of work required.
+        </li>
+     </ol>
+        </li>
+        <li>
+      Do non-residents pay a different rate of land transfer tax when purchasing real property in Ontario?
+      <h4 class="answer">
+        No. The residency of the transferee is not relevant to the amount of land transfer tax paid on the purchase of an interest in land in Ontario. A non-resident pays land transfer tax at the same rates as a resident. Prior to May 1997, the Land Transfer Tax Act required that non-residents pay a higher rate of land transfer tax on certain transactions, however, this part of the Act has since been removed.
+      </h4>
+    </li>
+
+
+    <li>
+      Buying property in Canada. How do I go about doing it?
+      <h4 class="answer">
+
+      </h4>
+    </li>
+
+    <li>
+      What about selling my property that I own in Canada?
+      <h4 class="answer">
+
+      </h4>
+    <li>
+      What about residency issues? 
+    </li>
   </ol>
 
 
@@ -93,51 +146,16 @@ What about entering into Canada. What do I have to know?
 
 OWNING PROEPRTY IN CANADA
 
-Q.
-
-I am not a Canadian citizen, ie: am an American citizen, can I buy land in Ontario?
-
 A.
 
 
 
-Q.
 
-Are there any unusual taxes or levies for a non-resident buyer?
+2: 
 
-A.
+3: 
 
-No. Sometimes if the property is being sold by a company or by a person who is in the business of buying and selling land, a Goods and Services Tax (GST) of seven (7) percent of the purchase price is applicable. This tax is collected by the lawyer and remitted to the Canadian Government. If applicable, this tax is paid by the buyer, whether they are Canadian citizens or not.
 
-Q.
-
-Who handles my closing?
-
-A.
-
-In Canada, closings are done by Canadian lawyers, the buyer has a lawyer and the seller has a lawyer. You should get a lawyer from the jurisdiction you are buying in.
-
-Q.
-
-How much will my lawyer cost? What are the closing costs?
-
-A.
-
-Closing costs are made up of three costs
-1: Land Transfer Tax (LTT): This is collected by the lawyer and remitted to the Provincial Government. For calculating this tax, the purchase price is converted to Canadian Dollars. The formula for this tax is $5 per thousand for the first $55,000
-$10 per thousand for the next $145,000
-$15 per thousand on any amount over $250,000
-
-example:
-
-for a purchase price of $50,000, the LTT would be $200 Cdn..
-For a purchase price of $80,000, the LTT would be $525 Cdn.
-
-2: Disbursements: This would include, long distance call, courier costs, title searches photo copies, stamps, seals etc. Typically these costs average in the $250 to $300 Cdn range.
-
-3: Legal Fees: This fee would be what the lawyer actually charges you for his time to handle your transaction. This fee would be what you negotiate with the lawyer. It is a good idea to check with 2 or 3 lawyers as some are more negotiable than others. They all have to do the same work and guarantee title for you. His job is to ensure that you are actually buying the property you think you are.
-
-He reviews the Title Search on the property with you, explains the terminology and ensures that you have clear title to the property. Typical costs would range from $700 to $1,500 depending on the amount of work required.
 
 Q.
 
@@ -145,7 +163,7 @@ Do non-residents pay a different rate of land transfer tax when purchasing real 
 
 A.
 
-No. The residency of the transferee is not relevant to the amount of land transfer tax paid on the purchase of an interest in land in Ontario. A non-resident pays land transfer tax at the same rates as a resident. Prior to May 1997, the Land Transfer Tax Act required that non-residents pay a higher rate of land transfer tax on certain transactions, however, this part of the Act has since been removed.
+
 
 Q.
 
@@ -409,5 +427,11 @@ export default {
 }
 h4{
   color:blue;
+}
+{
+  color: blue;
+}
+.answer{
+  color: blue;
 }
 </style>
