@@ -1,5 +1,6 @@
 // LOCAL DEV VARIABLES
 let env = {
+<<<<<<< HEAD
     NODE_ENV: 'development',
     PORT: 3000,
     DBPROTOCOL: 'mongodb',
@@ -9,6 +10,17 @@ let env = {
     DBNAME: 'rland',
     SERVERNAME: 'dev-server'
 };
+=======
+	NODE_ENV: 'development',
+	PORT: 3000,
+	DBPROTOCOL: 'mongodb',
+	DBUSERNAME: 'elio',
+	DBPASSWORD: 'rec4321',
+	DBHOST: 'ds123752.mlab.com:23752',
+	DBNAME: 'rland',
+	SERVERNAME: 'dev-server'
+}
+>>>>>>> 04f01880d3f0d5fc8060949399db7a9703b24bf7
 
 // MAPS env TO ACTUAL ENVIRONMENT
 

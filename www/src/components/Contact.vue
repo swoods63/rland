@@ -4,9 +4,9 @@
       <div class="container">
         <div class="row">
           <div class="about_our_company" style="margin-bottom: 20px;">
-            <h1 style="color:#fff;">Write Your Message</h1>
+            <h1 style="color:#fff;">Recreationland Contact</h1>
             <div class="titleline-icon"></div>
-            <p style="color:#fff;">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
+            <p style="color:#fff;">We're looking forward to hearing from you.<br> Please add your contact information and a brief description of how we can help.</p>
           </div>
         </div>
         <div class="row">
@@ -34,7 +34,7 @@
                   </div>
                 </div>
                 <div class="clearfix"></div>
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12 text-right">
                   <div id="success"></div>
                   <button type="submit" class="btn btn-xl get">Send Message</button>
                 </div>
@@ -43,12 +43,13 @@
           </div>
           <div class="col-md-4">
             <p style="color:#fff;">
-              <strong><i class="fa fa-map-marker"></i> Address</strong><br> 1216/Mirpur_10 Beach, Dhaka(Bangladesh)
+              <strong><i class="fa fa-map-marker"></i> Address</strong><br> 391 Oliver Rd., Thunder Bay, Ontario)
             </p>
-            <p style="color:#fff;"><strong><i class="fa fa-phone"></i> Phone Number</strong><br> (+8801)7123456
+            <p style="color:#fff;"><strong><i class="fa fa-phone"></i> Phone Number</strong><br> Office: (807) 683-9871
             </p>
             <p style="color:#fff;">
-              <strong><i class="fa fa-envelope"></i>  Email Address</strong><br> Email@info.com
+              <strong><i class="fa fa-envelope"></i>  Email Address</strong><br> elio@recreationland.net<br>
+              <strong><i class="fa fa-envelope"></i>  Email Address</strong><br> steve_james@shaw.ca
             </p>
             <p></p>
           </div>
@@ -76,7 +77,7 @@
 <style scoped>
   section#contact {
     background-color: #222222;
-    background-image: url('http://artdnaswitchbd.com/componants/images/map-image.png');
+    background-image:;
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -103,7 +104,7 @@
   }
 
   section#contact .form-group textarea.form-control {
-    height: 236px;
+    height: 500px;
   }
 
   section#contact .form-control:focus {
@@ -115,7 +116,7 @@
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    color: #eeeeee;
+    color: #c1bdbd;
   }
 
   .gellary_bg_none img {
@@ -155,7 +156,7 @@
   }
 
   .about_our_company h1 {
-    font-size: 25px;
+    font-size: 60px;
   }
 
   .titleline-icon {
@@ -163,6 +164,10 @@
     max-width: 100px;
     border-top: 4px double #F99700;
     margin: 20px auto 20px;
+  }
+
+  p{
+    font-size: 30px;
   }
 
   .titleline-icon:after {
@@ -183,3 +188,5 @@
     background: #ffffff;
   }
 </style>
+
+

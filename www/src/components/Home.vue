@@ -2,7 +2,7 @@
 <div>
     <div class="container-fluid">
         <div class="row full-screen">
-            <div><h2 class="sitename">Recreationland.net</h2></div>
+            <div class="sitename">Recreationland.net</div>
             <div class="">
                 <div class="cb-slideshow col-xs-12">
                     <div class="button-container">
@@ -323,6 +323,7 @@
 
     .sitename {
         font-family: 'Dancing Script', cursive;
+        font-size: 52px;
         color: orange;
     }
 </style>
