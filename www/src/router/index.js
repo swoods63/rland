@@ -21,50 +21,49 @@ export default new Router({
         path: '/',
         name: 'Home',
         component: Home
-    },{
+    }, {
         path: '/search',
         name: 'Search',
         component: Search
-    },{
+    }, {
         path: '/properties/:id',
         name: 'Property',
         component: Property
-    },{
+    }, {
         path: '/login',
         name: 'Login',
         component: Login
-    },{
+    }, {
         path: '/register',
         name: 'Register',
         component: Register
-    },{
+    }, {
         path: '/advertising',
         name: 'Advertising',
         component: Advertising
-    },{
+    }, {
         path: '/border',
         name: 'Border',
         component: Border
-    },{
+    }, {
         path: '/contact',
         name: 'Contact',
         component: Contact
-    },{
+    }, {
         path: '/faqs',
         name: 'Faqs',
         component: Faqs
-    },{
+    }, {
         path: '/privacy',
         name: 'Privacy',
         component: Privacy
-    },{
+    }, {
         path: '/resources',
         name: 'Resources',
         component: Resources
-    },
-    {
+    }, {
         path: '/map',
         name: 'Map',
         component: Map
-   }]
+    }]
 })
