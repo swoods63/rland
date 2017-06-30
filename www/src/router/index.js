@@ -59,7 +59,6 @@ export default new Router({
         path: '/privacy',
         name: 'Privacy',
         component: Privacy
-<<<<<<< HEAD
     },{
         path: '/map',
         name: 'Map',
@@ -73,15 +72,3 @@ export default new Router({
         name: 'Terms',
         component: Terms   
 }]
-=======
-    }, {
-        path: '/resources',
-        name: 'Resources',
-        component: Resources
-    }, {
-        path: '/map',
-        name: 'Map',
-        component: Map
-    }]
->>>>>>> e1be80bf1948ec542a0652d362663a262090ed5c
-})
