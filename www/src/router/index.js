@@ -70,5 +70,10 @@ export default new Router({
     },{
        path: '/terms',
         name: 'Terms',
-        component: Terms   
+        component: Terms
+    },{
+        path: '/resources',
+        name: 'Resources',
+        component: Resources
 }]
+})
