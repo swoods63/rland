@@ -59,16 +59,16 @@ export default new Router({
         path: '/privacy',
         name: 'Privacy',
         component: Privacy
-    },{
+    }, {
         path: '/map',
         name: 'Map',
         component: Map
-    },{
-       path: '/admin',
+    }, {
+        path: '/admin',
         name: 'Admin',
         component: Admin
-    },{
-       path: '/terms',
+    }, {
+        path: '/terms',
         name: 'Terms',
         component: Terms
     },{
