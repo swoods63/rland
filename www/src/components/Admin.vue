@@ -28,7 +28,11 @@ template>
             </label>
             <label class="checkbox-inline">
               <input type="checkbox" id="inlineCheckbox3" data-size="large" data-toggle="toggle" @click="checkboxProperties(49000, 100000)"> 101-300K
+<<<<<<< HEAD
+            </label>
+=======
             </label>            
+>>>>>>> 9f93c14ec32eb1f389b9fe7741f771edf7e0df6c
           </form>
         </div>
       </div>
@@ -58,7 +62,11 @@ template>
         min: 0,
         max: 0,
         query: {},
+<<<<<<< HEAD
+        propertyModel: {
+=======
         propertyModel: {          
+>>>>>>> 9f93c14ec32eb1f389b9fe7741f771edf7e0df6c
           lakefront: {type: 'checkbox', value:false, name: 'Lake Front'},
           riverfront: {type: 'checkbox', value:false, name: 'River Front'},
           huntingLand: {type: 'checkbox', value:false, name: 'Hunting Land'},
@@ -67,25 +75,38 @@ template>
           cabins: {type: 'checkbox', value:false, name: 'Cabins/Cottages'},
           developmentLand: {type: 'checkbox', value:false, name: 'Development Land'},
           resorts: {type: 'checkbox', value:false, name: 'Resorts'},
+<<<<<<< HEAD
+=======
 
+>>>>>>> 9f93c14ec32eb1f389b9fe7741f771edf7e0df6c
           water: {type: 'checkbox', value:false, name: 'Water Line'},
           power: {type:'checkbox', value:false, name: 'Line Power'},
           bodyOfWater: {type: 'checkbox', value:false, name: 'Waterfront'},
           accessRoad: {type: 'checkbox', value:false, name: 'Access Road'},
+<<<<<<< HEAD
+=======
 
+>>>>>>> 9f93c14ec32eb1f389b9fe7741f771edf7e0df6c
           isFeature: {type: 'checkbox', value:false, name: 'Featured'},
           hasStructure: {type: 'checkbox', value:false, name: 'Includes Structure'},
           salePrice: {type: 'number', value:false, name: 'Sale Price'},
           totalAcreage: {type: 'number', value: 0, name: 'Total Acreage'},
           created: {type: 'number', value: 0, name: 'Created'},
+<<<<<<< HEAD
+=======
 
+>>>>>>> 9f93c14ec32eb1f389b9fe7741f771edf7e0df6c
           // name: "",
           conditionalOffer: {type: 'checkbox', value:false, name: ''},
           activeListing: {type: 'checkbox', value:false, name: ''},
           listingPrice: {type: 'number', value: 0, name: ''},
           lotSize: {type:'text', value:"", name: 'This is our test'},
           year: {type: 'number', value: 0, name: ''},
+<<<<<<< HEAD
+          use: {type:'text', value:"", name: ''},
+=======
           use: {type:'text', value:"", name: ''},          
+>>>>>>> 9f93c14ec32eb1f389b9fe7741f771edf7e0df6c
           sewer: {type: 'checkbox', value:false, name: ''},
           basement: {type: 'checkbox', value:false, name: ''},
           propSize: {type:'text', value:"", name: ''},
@@ -118,7 +139,10 @@ template>
     // mounted() {
     //   this.$store.dispatch('searchProperties', this.query)
     // },
+<<<<<<< HEAD
+=======
 
+>>>>>>> 9f93c14ec32eb1f389b9fe7741f771edf7e0df6c
     computed: {
       properties() {
         return this.$store.state.properties
@@ -128,9 +152,15 @@ template>
       searchProperties() {
         for(var prop in this.propertyModel){
           if(this.propertyModel[prop].value){
+<<<<<<< HEAD
+            // { $lt: this.propertyModel[prop].value }
+            if(prop == 'salePrice' || prop == 'totalAcreage'){
+              this.query[prop] = {"$gte": this.min, "$lt": this.max}
+=======
             // { $lt: this.propertyModel[prop].value }   
             if(prop == 'salePrice' || prop == 'totalAcreage'){
               this.query[prop] = {"$gte": this.min, "$lt": this.max}           
+>>>>>>> 9f93c14ec32eb1f389b9fe7741f771edf7e0df6c
             }else{
               this.query[prop] = this.propertyModel[prop].value
             }
@@ -147,16 +177,25 @@ template>
         this.max = maxValue
         console.log(this.min)
       }
+<<<<<<< HEAD
+    },
+    components: {}
+  }
+=======
 
     },
     components: {}
   }
 
+>>>>>>> 9f93c14ec32eb1f389b9fe7741f771edf7e0df6c
 </script>
 
 
 <style scoped>
+<<<<<<< HEAD
+=======
 
+>>>>>>> 9f93c14ec32eb1f389b9fe7741f771edf7e0df6c
 .btn-white{
   transition: all .3s ease;
   background: #d8d8d8;
@@ -169,7 +208,11 @@ template>
   background: #efefef;
   transform: scale(1.2);
 }
+<<<<<<< HEAD
+</style>
+=======
 
 
 
 </style>
+>>>>>>> 9f93c14ec32eb1f389b9fe7741f771edf7e0df6c
