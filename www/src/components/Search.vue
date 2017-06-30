@@ -15,10 +15,39 @@
                 <input type="checkbox" v-if="obj.type == 'checkbox'" v-model="obj.value">
                 <input type="text" v-if="obj.type !== 'checkbox'" :placeholder="prop" v-model="obj.value">
               </div>
+              <div>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox" data-size="large" data-toggle="toggle" @click="checkboxProperties(1-50)">
+              </label>
+              </div>
+              <div class="form-group text-center">
+
+                <label class="checkbox-inline">Sales Price</label>
+                <input type="checkbox" id="inlineCheckbox1" data-size="large" data-toggle="toggle" @click="checkboxProperties(1, 100000)">                0-100K
+                </label>
+                <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox2" data-size="large" data-toggle="toggle" @click="checkboxProperties(101000, 200000)"> 101-200K
+            </label>
+                <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox3" data-size="large" data-toggle="toggle" @click="checkboxProperties(201000, 3500000)"> 201-350K
+            </label>
+                <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox1" data-size="large" data-toggle="toggle" @click="checkboxProperties(351000, 500000)"> 351-500K
+            </label>
+                <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox2" data-size="large" data-toggle="toggle" @click="checkboxProperties(501000, 800000)"> 501-800K
+            </label>
+                <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox3" data-size="large" data-toggle="toggle" @click="checkboxProperties(801000)"> 800k+
+            </label><br><br>
+              </div>
+              <div class="text-center">
+
+                <button class="btn" type="submit">Search Properties</button>
+              </div>
             </div>
-            <button class="btn" type="submit">Search Properties</button>
           </form>
-          <form>
+          <!--<form>
             <label class="checkbox-inline">
               <input type="checkbox" id="inlineCheckbox1" data-size="large" data-toggle="toggle" @click="checkboxProperties(1, 5000)"> 0-50K
             </label>
@@ -28,7 +57,7 @@
             <label class="checkbox-inline">
               <input type="checkbox" id="inlineCheckbox3" data-size="large" data-toggle="toggle" @click="checkboxProperties(49000, 100000)"> 101-300K
             </label>            
-          </form>
+          </form>-->
         </div>
       </div>
       <div class="row">
@@ -57,60 +86,49 @@
         min: 0,
         max: 0,
         query: {},
-        propertyModel: {          
-          lakefront: {type: 'checkbox', value:false, name: 'Lake Front'},
-          riverfront: {type: 'checkbox', value:false, name: 'River Front'},
-          huntingLand: {type: 'checkbox', value:false, name: 'Hunting Land'},
-          remoteAccess: {type: 'checkbox', value:false, name: 'Remote Access'},
-          islands: {type: 'checkbox', value:false, name: 'Islands'},
-          cabins: {type: 'checkbox', value:false, name: 'Cabins/Cottages'},
-          developmentLand: {type: 'checkbox', value:false, name: 'Development Land'},
-          resorts: {type: 'checkbox', value:false, name: 'Resorts'},
+        propertyModel: {
+          lakefront: { type: 'checkbox', value: false, name: 'Lake Front' },
+          riverfront: { type: 'checkbox', value: false, name: 'River Front' },
+          huntingLand: { type: 'checkbox', value: false, name: 'Hunting Land' },
+          remoteAccess: { type: 'checkbox', value: false, name: 'Remote Access' },
+          islands: { type: 'checkbox', value: false, name: 'Islands' },
+          cabins: { type: 'checkbox', value: false, name: 'Cabins/Cottages' },
+          developmentLand: { type: 'checkbox', value: false, name: 'Development Land' },
+          resorts: { type: 'checkbox', value: false, name: 'Resorts' },
 
-          water: {type: 'checkbox', value:false, name: 'Water Line'},
-          power: {type:'checkbox', value:false, name: 'Line Power'},
-          bodyOfWater: {type: 'checkbox', value:false, name: 'Waterfront'},
-          accessRoad: {type: 'checkbox', value:false, name: 'Access Road'},
+          water: { type: 'checkbox', value: false, name: 'Water Line' },
+          power: { type: 'checkbox', value: false, name: 'Line Power' },
+          bodyOfWater: { type: 'checkbox', value: false, name: 'Waterfront' },
+          accessRoad: { type: 'checkbox', value: false, name: 'Access Road' },
 
-          isFeature: {type: 'checkbox', value:false, name: 'Featured'},
-          hasStructure: {type: 'checkbox', value:false, name: 'Includes Structure'},
-          salePrice: {type: 'number', value:false, name: 'Sale Price'},
-          totalAcreage: {type: 'number', value: 0, name: 'Total Acreage'},
-          created: {type: 'number', value: 0, name: 'Created'},
+          //isFeature: {type: 'checkbox', value:false, name: 'Featured'},
+          //hasStructure: {type: 'checkbox', value:false, name: 'Includes Structure'},
+          //salePrice: {type: 'number', value:false, name: 'Sale Price'},
+          //totalAcreage: {type: 'number', value: 0, name: 'Total Acreage'},
+          //created: {type: 'number', value: 0, name: 'Created'},
 
           // name: "",
-          conditionalOffer: {type: 'checkbox', value:false, name: ''},
-          activeListing: {type: 'checkbox', value:false, name: ''},
-          listingPrice: {type: 'number', value: 0, name: ''},
-          lotSize: {type:'text', value:"", name: 'This is our test'},
-          year: {type: 'number', value: 0, name: ''},
-          use: {type:'text', value:"", name: ''},          
-          sewer: {type: 'checkbox', value:false, name: ''},
-          basement: {type: 'checkbox', value:false, name: ''},
-          propSize: {type:'text', value:"", name: ''},
-          waterfront: {type: 'checkbox', value:false, name: ''},
-          numStories: {type: 'number', value: 0, name: ''},
-          frontage: {type:'text', value:"", name: ''},
-          buildingDiv: {type:'text', value:"", name: ''},
-          totalArea: {type:'text', value:"", name: ''},
-          officeArea: {type:'text', value:"", name: ''},
-          whseArea: {type:'text', value:"", name: ''},
-          ceiling: {type:'text', value:"", name: ''},
-          construction: {type:'text', value:"", name: ''},
-          power: {type:'text', value:"", name: ''},
-          amps: {type: 'number', value: 0, name: ''},
-          heatAir: {type: 'checkbox', value:false, name: ''},
-          whseHeatAir: {type: 'checkbox', value:false, name: ''},
-          fuel: {type:'text', value:"", name: ''},
-          loading: {type:'text', value:"", name: ''},
-          numRentalUnits: {type: 'number', value: 0, name: ''},
-          area: {type:'text', value:"", name: ''},
-          features: {type:'text', value:"", name: ''},
-          exclusions: {type:'text', value:"", name: ''},
-          remarks: {type:'text', value:"", name: ''},
-          agreement: {type:'text', value:"", name: ''},
-          occupants: {type: 'number', value: 0, name: ''},
-          howShown: {type:'text', value:"", name: ''}
+          //
+          //buildingDiv: {type:'text', value:"", name: ''},
+          //totalArea: {type:'text', value:"", name: ''},
+          //officeArea: {type:'text', value:"", name: ''},
+          //whseArea: {type:'text', value:"", name: ''},
+          //ceiling: {type:'text', value:"", name: ''},
+          //construction: {type:'text', value:"", name: ''},
+          //power: {type:'text', value:"", name: ''},
+          //amps: {type: 'number', value: 0, name: ''},
+          //heatAir: {type: 'checkbox', value:false, name: ''},
+          //whseHeatAir: {type: 'checkbox', value:false, name: ''},
+          //fuel: {type:'text', value:"", name: ''},
+          //loading: {type:'text', value:"", name: ''},
+          //numRentalUnits: {type: 'number', value: 0, name: ''},
+          //area: {type:'text', value:"", name: ''},
+          //features: {type:'text', value:"", name: ''},
+          //exclusions: {type:'text', value:"", name: ''},
+          //remarks: {type:'text', value:"", name: ''},
+          //agreement: {type:'text', value:"", name: ''},
+          //occupants: {type: 'number', value: 0, name: ''},
+          //howShown: {type:'text', value:"", name: ''}
         }
       }
     },
@@ -125,12 +143,12 @@
     },
     methods: {
       searchProperties() {
-        for(var prop in this.propertyModel){
-          if(this.propertyModel[prop].value){
+        for (var prop in this.propertyModel) {
+          if (this.propertyModel[prop].value) {
             // { $lt: this.propertyModel[prop].value }   
-            if(prop == 'salePrice' || prop == 'totalAcreage'){
-              this.query[prop] = {"$gte": this.min, "$lt": this.max}           
-            }else{
+            if (prop == 'salePrice' || prop == 'totalAcreage') {
+              this.query[prop] = { "$gte": this.min, "$lt": this.max }
+            } else {
               this.query[prop] = this.propertyModel[prop].value
             }
           }
@@ -140,7 +158,7 @@
         this.min = 0
         this.max = 0
       },
-      checkboxProperties(minValue, maxValue){
+      checkboxProperties(minValue, maxValue) {
         this.propertyModel.salePrice.value = true
         this.min = minValue
         this.max = maxValue
@@ -155,20 +173,17 @@
 
 
 <style scoped>
+  .btn-white {
+    transition: all .3s ease;
+    background: #d8d8d8;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 0;
+  }
 
-.btn-white{
-  transition: all .3s ease;
-  background: #d8d8d8;
-  color: #000;
-  font-size: 1.5rem;
-  font-weight: 600;
-  border-radius: 0;
-}
-.btn-white:hover{
-  background: #efefef;
-  transform: scale(1.2);
-}
-
-
-
+  .btn-white:hover {
+    background: #efefef;
+    transform: scale(1.2);
+  }
 </style>

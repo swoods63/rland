@@ -1,100 +1,105 @@
 <template>
-<div>
-    <div class="container-fluid">
-        <div class="row full-screen">
-            <div class="sitename">Recreationland.net</div>
-            <div class=""></div>
+    <div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row full-screen">
+                <div class="relative">
+                    <div class="sitename">Recreationland.net</div>
 
 
-            
-                <div class="cb-slideshow col-xs-12">
-                    <div class="button-container">
-                        <div class="buttons t-shadow">
+                    <div class="cb-slideshow col-xs-12">
+                        <div class="button-container">
+                            <div class="buttons t-shadow">
 
-                            <div class="button">
-                                <router-link to="/contact">
-                                    <button><i class="fa fa-fw fa-envelope fa-3x t-shadow"></i></button>
-                                </router-link>   
-                                <h3>Contact Us</h3>
-                            </div>
+                                <div class="button">
+                                    <router-link to="/contact">
+                                        <button><i class="fa fa-fw fa-envelope fa-3x t-shadow"></i></button>
+                                    </router-link>
+                                    <h3>Contact Us</h3>
+                                </div>
 
-                            <div class="button" id="p4">
-                <button a href="properties"><i class="fa fa-fw fa-home fa-3x t-shadow"></i>
-                </button>
-                                <h3>Properties</h3>
-                            </div>
+                                <div class="button" id="p4">
+                                    <button><i class="fa fa-fw fa-home fa-3x t-shadow"></i></button>
+                                    <h3>Properties</h3>
+                                </div>
 
-                            <div class="button">               
-                                <router-link to="/login">
-                                    <button><i class="fa fa-fw fa-user fa-3x t-shadow"></i></button>
-                                </router-link>
-                                <h3>Login</h3>
+                                <div class="button">
+                                    <router-link to="/login">
+                                        <button><i class="fa fa-fw fa-user fa-3x t-shadow"></i></button>
+                                    </router-link>
+                                    <h3>Login</h3>
+                                </div>
                             </div>
                         </div>
+                        <ul>
+                            <li>
+                                <span>Image 1</span>
+                            </li>
+                            <li>
+                                <span>Image 2</span>
+                            </li>
+                            <li>
+                                <span>Image 3</span>
+                            </li>
+                            <li>
+                                <span>Image 4</span>
+                            </li>
+                            <li>
+                                <span>Image 5</span>
+                            </li>
+                            <li>
+                                <span>Image 6</span>
+                            </li>
+                            <li>
+                                <span>Image 7</span>
+                            </li>
+                            <li>
+                                <span>Image 8</span>
+                            </li>
+                            <li>
+                                <span>Image 9</span>
+                            </li>
+                            <li>
+                                <span>Image 10</span>
+                            </li>
+                            <li>
+                                <span>Image 11</span>
+                            </li>
+                            <li>
+                                <span>Image 12</span>
+                            </li>
+                            <li>
+                                <span>Image 13</span>
+                            </li>
+                        </ul>
                     </div>
-                    <ul>
-                        <li>
-                            <span>Image 1</span>
-                        </li>
-                        <li>
-                            <span>Image 2</span>
-                        </li>
-                        <li>
-                            <span>Image 3</span>
-                        </li>
-                        <li>
-                            <span>Image 4</span>
-                        </li>
-                        <li>
-                            <span>Image 5</span>
-                        </li>
-                        <li>
-                            <span>Image 6</span>
-                        </li>
-                        <li>
-                            <span>Image 7</span>
-                        </li>
-                        <li>
-                            <span>Image 8</span>
-                        </li>
-                        <li>
-                            <span>Image 9</span>
-                        </li>
-                        <li>
-                            <span>Image 10</span>
-                        </li>
-                        <li>
-                            <span>Image 11</span>
-                        </li>
-                        <li>
-                            <span>Image 12</span>
-                        </li>
-                        <li>
-                            <span>Image 13</span>
-                        </li>
-                    </ul>
                 </div>
+            </div>
         </div>
+        <div class="container-fluid bg-green">
+            <div class="row">
+                <featured></featured>
+            </div>
+            <div class="row">
+                <properties></properties>
+            </div>
+            <div class="row">
+                <types></types>
+            </div>
+            <div class="row bg-red">
+                <search></search>
+            </div>
+            <div class="row b-divider">
+                <g-map lat="51.2538" long="-85.3232"></g-map>
+            </div>
+        </div>
+        <myFooter></myFooter>
     </div>
-    <div class="container-fluid bg-green">
-        <div class="row">
-            <featured></featured>
-        </div>
-        <div class="row">
-            <properties></properties>
-        </div>
-        <div class="row">
-            <types></types>
-        </div>
-        <div class="row bg-red">
-            <search></search>
-        </div>
-        <div class="row b-divider">
-            <g-map lat="51.2538" long="-85.3232"></g-map>
-        </div>
-    </div>
-    <myFooter></myFooter>
-</div>
 </template>
 
 
@@ -109,22 +114,22 @@
     export default {
         name: 'home',
         data() {
-      return{
-    }
-    },
+            return {
+            }
+        },
 
         mounted() {
             //this.$store.dispatch('getAuth')
         },
         computed: {},
         methods: {
-            contact(){},
-            properties(){},
-            login(){}
+            contact() { },
+            properties() { },
+            login() { }
 
 
         },
-            
+
         components: {
             Featured,
             Properties,
@@ -140,11 +145,15 @@
 
 // Add "scoped" attribute to limit CSS to this component only
 <style scoped>
-    .full-screen {
-        height:1000px;
+    .relative {
+        position: relative;
     }
 
-    .bg-red{
+    .full-screen {
+        height: 1000px;
+    }
+
+    .bg-red {
         background: #50A879;
         margin-top: 3rem;
         margin-bottom: 3rem;
@@ -153,10 +162,11 @@
         color: aliceblue;
     }
 
-    .b-divider{
+    .b-divider {
         border-bottom: 1px solid #252525;
     }
-    .bg-green{
+
+    .bg-green {
         background-color: #3b423a;
     }
     /* .text-yellow {
@@ -179,8 +189,13 @@
 
     .button-container .buttons {
         display: flex;
-        z-index: 10;
+        z-index: 999;
     }
+
+    .button-container .buttons .button:hover {
+        cursor: pointer;
+    }
+
 
     @media screen and (max-width: 500px) {
         .button-container .buttons {
@@ -223,7 +238,6 @@
         height: 1000px;
         top: 0px;
         left: 0px;
-        z-index: -10;
     }
 
     .cb-slideshow ul {
@@ -242,7 +256,8 @@
         background-position: 50% 50%;
         background-repeat: none;
         opacity: 0;
-        animation: imageAnimation 36s linear infinite 0s;
+        z-index: -999;
+        animation: imageAnimation 72s ease-in-out infinite 0s;
     }
 
     .cb-slideshow ul li:nth-child(1) span {
@@ -333,5 +348,8 @@
         font-family: 'Dancing Script', cursive;
         font-size: 52px;
         color: orange;
+        opacity: 1 !important;
+        z-index: 9999;
+        animation: none !important;
     }
 </style>

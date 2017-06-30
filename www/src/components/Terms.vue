@@ -1,6 +1,6 @@
 <template>
     <div class="terms">
-
+        <p> This is my terms and conditions page</p>
 
     </div>
 </template>
@@ -10,6 +10,7 @@
 export default {
     name: 'terms',
     data(){
+        return{}
 
     },
     computed:{},
@@ -19,6 +20,6 @@ export default {
 </script>
 
 
-<style scoped lang="sass">
+<style>
 
 </style>

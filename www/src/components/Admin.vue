@@ -1,5 +1,6 @@
 template>
-  <div class="search">
+  <div class="admin">
+   <p> This is the admin page where properties and photos will be uploaded and edited</p>
     <div class="container">
       <div class="row">
         <div class="col-sm-12 text-center">
@@ -50,7 +51,7 @@ template>
 
 <script>
   export default {
-    name: 'search',
+    name: 'admin',
     data() {
       return {
         showForm: false,

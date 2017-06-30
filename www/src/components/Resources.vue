@@ -67,6 +67,7 @@ steve_james@shaw.ca
 export default {
   name: 'resources',
   data(){
+    return{}
 
   },
   computed:{},

@@ -12,6 +12,8 @@ import Faqs from '../components/Faqs'
 import Privacy from '../components/Privacy'
 import Resources from '../components/Resources'
 import Map from '../components/Map'
+import Admin from '../components/Admin'
+import Terms from '../components/Terms'
 
 Vue.use(Router)
 
@@ -58,13 +60,16 @@ export default new Router({
         name: 'Privacy',
         component: Privacy
     },{
-        path: '/resources',
-        name: 'Resources',
-        component: Resources
-    },
-    {
         path: '/map',
         name: 'Map',
         component: Map
-   }]
+    },{
+       path: '/admin',
+        name: 'Admin',
+        component: Admin
+    },{
+       path: '/terms',
+        name: 'Terms',
+        component: Terms   
+}]
 })

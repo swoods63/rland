@@ -11,7 +11,7 @@
 export default {
   name: 'adverting',
   data(){
-
+    return{}
   },
   computed:{},
   methods:{},

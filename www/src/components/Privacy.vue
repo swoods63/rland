@@ -10,7 +10,7 @@
 export default {
   name: 'privacy',
   data(){
-
+    return{}
   },
   computed:{},
   methods:{},

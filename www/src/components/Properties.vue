@@ -10,6 +10,9 @@
 <script>
 export default {
   name: 'properties',
+  data(){
+    return{}
+  },
 
   // mounted(){
   //   this.$store.dispatch('getProperty')

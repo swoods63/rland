@@ -13,6 +13,9 @@
 import GMap from './Map'
 export default {
   name: 'property',
+  data(){
+    return{}
+  },
   mounted(){
     this.$root.$data.store.actions.getProperty(this.$route.params.id)
   },
@@ -27,5 +30,5 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 </style>
