@@ -14,6 +14,7 @@ import Resources from '../components/Resources'
 import Map from '../components/Map'
 import Admin from '../components/Admin'
 import Terms from '../components/Terms'
+import Lawyers from '../components/Lawyers'
 
 Vue.use(Router)
 
@@ -63,6 +64,10 @@ export default new Router({
         path: '/map',
         name: 'Map',
         component: Map
+    }, {
+        path: '/lawyers',
+        name: 'Lawyers',
+        component: Lawyers
     }, {
         path: '/admin',
         name: 'Admin',

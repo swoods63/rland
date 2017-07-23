@@ -1,0 +1,119 @@
+<template>
+    <div class="admin">
+        <h1 class="pageTitle text-center">
+            <p><b>Recreationland</b></p>
+            <p><b>Admin Property Upload</b></p>
+        </h1>
+        <form @submit.prevent="createProperty">
+            <div>
+                <div>
+                    <label class="propT">Property Type:</label>
+                    <select class="sel">
+                        <option>Lake Front</option>
+                        <option>River Front</option>
+                        <option>Hunting Land</option>
+                        <option>Remote Access</option>
+                        <option>Islands</option>
+                        <option>Cottages/Cabins</option>
+                        <option>Development Land</option>
+                        <option>Resorts</option>
+                     </select>
+                </div>
+                <div>
+                    <label class="propT">Prop Name/Title:</label>
+                    <input class="propNT" type="text" />
+                </div>
+                <div>
+                    <label class="propT">List Price:</label>
+                    <input class="propLP" type="text" />
+                    <select id="dollar">
+                        <option>CDN</option>
+                        <option>US</option> 
+                    </select>
+                </div>
+                <div>
+                    <label class="propT">Lot Size:</label>
+                    <input class="propLS" type="text" />
+                </div>
+                <div class="saf">
+                    <label>Sold</label>
+                    <input type="checkbox" value="" />
+                </div>
+                <div class="saf">
+                    <label>Active Listing</label>
+                    <input type="checkbox" value="" />
+                </div>
+                <div class="saf">
+                    <label>Feature</label>
+                    <input type="checkbox" value="" />
+                    <div>
+                        <h3><b>Description:</b></h3>
+                        <p><textarea name="comment" id="" cols="100" rows="10" class="tArea" placeholder="Write about the property..."></textarea></p>
+                    </div>
+                </div>
+                <div>
+                    <h3><b>Additional Information:</b></h3>
+                    <div class="row">
+                        <div class="col-md-6 inputData">
+                            <label class="lNames1">Taxes:</label>
+                            <input type="text" placeholder="Taxes" class="inField">
+                            <label class="lNames1">Year:</label>
+                            <input type="text" placeholder="Year" class="inField">
+                            <label class="lNames1">Zoning:</label>
+                            <input type="text" placeholder="Zoning" class="inField">
+                            <label class="lNames1">SD/RD:</label>
+                            <input type="text" placeholder="SD/RD" class="inField">
+                            <label class="lNames1">Waterline:</label>
+                            <input type="text" placeholder="Waterline" class="inField">
+                            <label class="lNames1">Survey:</label>
+                            <input type="text" placeholder="Survey" class="inField">
+                            <label class="lNames1">Cap Changes:</label>
+                            <input type="text" placeholder="Cap Changes" class="inField">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <label class="lNames2">Powerline:</label>
+                        <input type="text" class="inField" placeholder="Powerline">
+                        <label class="lNames2">Sewerline:</label>
+                        <input type="text" class="inField" placeholder="Sewerline">
+                        <label class="lNames2">Amps:</label>
+                        <input type="text" class="inField" placeholder="Amps">
+                        <label class="lNames2">Frontage:</label>
+                        <input type="text" class="inField" placeholder="Frontage">
+                        <label class="lNames2">Structure:</label>
+                        <input type="text" class="inField" placeholder="Structure">
+                        <label class="lNames2">Usage:</label>
+                        <input type="text" class="inField" placeholder="Usage">
+                        <label class="lNames2">Mineral Rights:</label>
+                        <input type="text" class="inField" placeholder="Mineral Rights">
+                        <label class="lNames2">Unorganized Township:</label>
+                        <input type="text" class="inField" placeholder="Unorganized Township">
+                    </div>
+                </div>
+
+
+                <hr>
+                <div>
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Edit a Property</button>
+                    <select>
+                        <option>Lake Front</option>
+                        <option>River Front</option>
+                        <option>Hunting Land</option>
+                        <option>Remote Access</option>
+                        <option>Islands</option>
+                        <option>Cottages/Cabins</option>
+                        <option>Development Land</option>
+                        <option>Resorts</option>
+                    </select>
+                </div>
+                <div>
+                    <button class="btn pnt btn-primary" type="Submit">Submit Properties</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+</template>

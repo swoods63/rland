@@ -28,22 +28,22 @@
           type: "River Front"
         }, {
           img: "../../static/Properties-img/1488212429_lg HL.jpg",
-          type: "Hunting Land"
+          type: "Hunting Land & Large Acreage"
         }, {
-          img: '../../static/Properties-img/Islands.jpg',
+          img: "../../static/Properties-img/pic 14 (2) Remote.jpg",
           type: 'Islands'
         }, {
           img: "../../static/Properties-img/1288384066_lg Cottage.jpg",
           type: "Cottages/Cabins"
         }, {
-          img: "../../static/Properties-img/1355346997_lg DL.jpg",
-          type: "Development"
-        }, {
-          img: '../../static/Properties-img/1464281988_lg Resort.jpg',
-          type: 'Resorts'
-        }, {
-          img: "../../static/Properties-img/pic 14 (2) Remote.jpg",
+          img: "../../static/Properties-img/1464281988_lg Resort.jpg",
           type: "Remote Access"
+        }, {
+          img: "../../static/Properties-img/1355346997_lg DL.jpg",
+          type: 'Development/Resorts'
+        }, {
+          //img: //"../../static/Properties-img/pic 14 (2) Remote.jpg",
+          type: "Lawyers/Attorneys"
         }]
       }
     },
@@ -62,20 +62,21 @@
   .row {
     margin: auto;
     padding-top: 20px;
-    padding: 30px;
+    padding-bottom: 20px;
+    padding-top:10px;
     border-bottom: 2px;
   }
 
   .img-responsive {
     margin: auto;
-    height: 200px;
-    width: 350px;
+    height: 150px;
+    width: 300px;
   }
 
   h3 {
     position: relative;
     text-align: center;
-    top: -60px;
+    top: -80px;
     color: White;
     z-index: 10;
   }
@@ -97,8 +98,9 @@
 
   .property-type img {
     background: #fff;
-    padding: .5rem;
+    padding: .3rem;
   }
+
   .property-type h3{
     text-shadow: 1px 1px 1px #000;
   }

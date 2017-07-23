@@ -1,8 +1,8 @@
 <template>
   <div class="faqs">
-    <h1><b class="d">Frequently Asked Questions</b></h1><br>
+    <h1 class="d text-center"><b>Frequently Asked Questions</b></h1><br>
 
-      <h4 class="note d">PLEASE NOTE THAT THE COMMENTS CONTAINED IN THIS QUESTIONS AND ANSWERS SECTION ARE FOR INFORMATION PURPOSES ONLY AND DO NOT CONSTITUTE LEGAL ADVICE.
+      <h4 class="note text-center"><b>PLEASE NOTE THAT THE COMMENTS CONTAINED IN THIS QUESTIONS AND<br> ANSWERS SECTION ARE FOR INFORMATION PURPOSES ONLY AND DO NOT CONSTITUTE LEGAL ADVICE.</b>
       </h4><br>
 
 <h2><b class="d">OWNING PROPERTY IN CANADA</b></h2>
@@ -263,16 +263,17 @@ export default {
 
 <style scoped>
 .faqs{
-  background-color:#F5F5DC ;
+  background-color:#F5F5DC;
 }
 .note{
   color: red;
+  font-size: 24px;
 }
 h4{
   color:blue;
 }
-{
-  color: blue;
+.d{
+  color: black;
 }
 .answer{
   color: blue;
@@ -289,7 +290,5 @@ hr {
   .b{
     color: black;
   }
-  .d{
-    margin-left: 25px;
-  }
+  
 </style>

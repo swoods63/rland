@@ -28,12 +28,12 @@
                                     <h3>Properties</h3>
                                 </div>
 
-                                <div class="button">
+                                <!--<div class="button">
                                     <router-link to="/login">
                                         <button><i class="fa fa-fw fa-user fa-3x t-shadow"></i></button>
                                     </router-link>
                                     <h3>Login</h3>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
                         <ul>

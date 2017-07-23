@@ -104,7 +104,7 @@
   }
 
   section#contact .form-group textarea.form-control {
-    height: 500px;
+    height: 300px;
   }
 
   section#contact .form-control:focus {
@@ -156,7 +156,7 @@
   }
 
   .about_our_company h1 {
-    font-size: 60px;
+    font-size: 45px;
   }
 
   .titleline-icon {
@@ -167,7 +167,7 @@
   }
 
   p{
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .titleline-icon:after {

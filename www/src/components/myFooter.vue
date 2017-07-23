@@ -2,19 +2,20 @@
   <div class="myFooter container-fluid">
     <div class="row">
       <ul class="list-inline text-center">
-        <li class="active myLinks"><a href="#b1">Advertising</a></li>
-        <li class="active myLinks"><a href="#b2">Border Crossing</a></li>
-        <li class="active myLinks"><a href="#b3">Contact</a></li>
-        <li class="active myLinks"><a href="#b4">FAQs</a></li>
+        <!--<li class="active myLinks"><a href="http://localhost:8080/#/advertising">Advertising</a></li>-->
+        <li class="active myLinks"><a href="http://localhost:8080/#/contact">Contact</a></li>
+        <li class="active myLinks"><a href="http://localhost:8080/#/faqs">FAQs</a></li>
+        <li class="active myLinks"><a href="http://localhost:8080/#/border">Crossing Border</a></li>
       </ul>
 
     </div>
     <div class="row">
       <ul class="list-inline text-center">
-        <li class="active myLinks"><a href="#b5">Privacy</a></li>
-        <li class="active myLinks"><a href="#b6">Register</a></li>
-        <li class="active myLinks"><a href="#b7">Resources</a></li>
-        <li class="active myLinks"><a href="#b8">Terms and Conditions</a></li>
+        <li class="active myLinks"><a href="http://localhost:8080/#/privacy">Privacy</a></li>
+        <li class="active myLinks"><a href="http://localhost:8080/#/register">Register</a></li>
+        <li class="active myLinks"><a href="http://localhost:8080/#/resources">Resources</a></li>
+        <!--<li class="active myLinks"><a href="http://localhost:8080/#/terms">Terms and Conditions</a></li><br>-->
+        <li class="active myLinks"><a href="http://localhost:8080/#/">TDO  Web Design & Hosting</a></li>
       </ul>
     </div>
 

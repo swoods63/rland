@@ -16,9 +16,6 @@
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 p2">
         <img class="img-responsive" src="static\Featured-imgs\olivier-guillard-49712.jpg">
       </div>
-      <!--<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p3">
-        <img class="img-responsive" src="static\Featured-imgs\ryan-moreno-99473.jpg">
-      </div>-->
     </div>
     </div>
   </div>
@@ -43,37 +40,35 @@ export default {
 
 
 <style scoped>
+
 .FP {
   position: relative;
   text-align:center;
-  font-size: 100px;
+  font-size: 40px;
   background-color: orange;
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom:10px;
-
 }
 
 .featured {
-  /*padding-top: 20px;*/
   padding: 20px;
   border-bottom: 2px;
-
 }
-
 
 p {
   font-family: 'Lobster Two', cursive;
-  font-size: 70px;
-  /*border: 5px solid red;*/
-  /*margin-left: 100px;
-  margin-right: 100px;*/
+  font-size: 40px;
 }
 
 .property-feat img{
     background: #fff;
     padding: .5rem;
-  }
+    height: 200px;
+    width: 350px;
+    margin: auto;
+    margin-top:20px;
+}
 
 
 </style>

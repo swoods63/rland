@@ -1,36 +1,38 @@
 <template>
-  <div class="login">
-    <div class="container-fluid">
-    <p>Register as a User if:<ul><li>You are an investor/developer</li><li>You need additional information on a property</li><li>You want email updates on the latest properties listed</li><li>You want instant access to additional information</li></ul></p>
-      <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-          <div class="panel panel-default center">
-            <div class="panel-heading">
-              <p class="panel-title text-center">Register</p>
-            </div>
-            <div class="panel-body text-center">
-              <form role="form" @submit.prevent="register">
-                <fieldset>
-                <div class="form-group">
+  <div class="register">
+     <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="regP">Register as a User if:<br><br><ul><li>You are an investor/developer</li><br><li>You need additional information on a property</li><br><li>You want email updates on latest properties listed</li><br><li>You want instant access to additional information</li></ul></p>
+              </div>
+               <div class="panel col-md-6">
+                <div class="panel-heading">
+                  <p class="panel-title text-center">Register</p>
+                <div class="panel-body text-center">
+                 <form role="form" @submit.prevent="register">
+                  <fieldset>
+                    <div class="form-group">
                     <input class="form-control" placeholder="Name" type="text" autofocus v-model="user.name">
-                  </div>
-                  <div class="form-group">
+                    </div>
+                    <div class="form-group">
                     <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus v-model="user.email">
-                  </div>
-                  <div class="form-group">
+                    </div>
+                    <div class="form-group">
                     <input class="form-control" placeholder="Password" name="password" type="password" v-model="user.password">
-                  </div>
+                    </div>
                   <!-- Change this to a button or input when using this as a form -->
-                  <button type="submit" class="btn btn-success btn-block">Create Account</button>
-                </fieldset>
-                <p> We promise to not share your information with anyone</p>
-              </form>
+                    <button type="submit" class="btn btn-success btn-block">Create Account</button>
+                  </fieldset>
+                 </form>
+                 <div>
+                  <p class="prom text-center">We promise to not share your information with anyone</p></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -58,30 +60,40 @@
 
 <style scoped>
 .panel{
-  margin-top: 50px;
-  margin-bottom: 200px;
-  width: 500px;
-  height: 440px;
+  margin-top: 80px;
+  margin-bottom: 0px;
+  margin-left: 80px;
+  width: 480px;
+  height: 400px;
 }
 .panel-title{
   color: black;
   padding-top: 20px;
   margin-bottom: 20px;
+  font-size: 20px;
+  display: flex;
 }
 .container-fluid{
   background-color: black;
+  height: 700px;
 }
 p{
-  font-size:32px;
-  color: #eeeeee;
-  padding-top: 50px;
-  padding-left: 25px;
-}
+  font-size:22px;
+  color: white;
+  padding-top: 100px;
+  margin-left: 100px;
+ }
 .form-control{
   height: 60px;
 }
+.prom{
+  font-size: 20px;
+  margin-top: -55px;
+}
 .btn{
   font-size: 24px;
-  height:50px;
+  height: 50px;
 }
+
+
 </style>

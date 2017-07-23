@@ -18,7 +18,7 @@
                   </div>
                   <!-- Change this to a button or input when using this as a form -->
                   <button type="submit" class="btn btn-success btn-block">Login</button>
-                 <p class="reg">Not Registered Yet? <b v-on:click="register">Click here.</b></p>
+                 <p class="reg">Not Registered Yet?<router-link to='/register'>Click here.</router-link></p>
                 </fieldset>
               </form>
             </div>
