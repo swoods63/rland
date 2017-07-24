@@ -35,6 +35,18 @@
                     <label class="propT">Lot Size:</label>
                     <input class="propLS" type="text" />
                 </div>
+                <div>
+                    <label class="propT">Longitude:</label>
+                    <input class="propLNG" type="text" />
+                </div>
+                <div>
+                    <label class="propT">Latitude:</label>
+                    <input class="propLAT" type="text" />
+                </div>
+                <div>
+                    <input type="file" id="tohide" />
+                    <input type="button" value="upload images" class="upload" onClick="document.getElementById('tohide').click()" />
+                </div>
                 <div class="saf">
                     <label>Sold</label>
                     <input type="checkbox" value="" />
@@ -53,51 +65,74 @@
                 </div>
                 <div>
                     <h3><b>Additional Information:</b></h3>
-                    <div class="row">
-                        <div class="col-md-6 inputData">
+                     <div class="row">
+                        <div class="inputData">
                             <label class="lNames1">Taxes:</label>
-                            <input type="text" placeholder="Taxes" class="inField">
+                            <input type="text" placeholder="Taxes" class="inField1" />
+                          </div>
+                          <div>
                             <label class="lNames1">Year:</label>
-                            <input type="text" placeholder="Year" class="inField">
+                            <input type="text" placeholder="Year" class="inField2" />
+                           </div>
+                          <div>  
                             <label class="lNames1">Zoning:</label>
-                            <input type="text" placeholder="Zoning" class="inField">
+                            <input type="text" placeholder="Zoning" class="inField3" />
+                           </div>
+                          <div>  
                             <label class="lNames1">SD/RD:</label>
-                            <input type="text" placeholder="SD/RD" class="inField">
+                            <input type="text" placeholder="SD/RD" class="inField4" />
+                           </div>
+                          <div>  
                             <label class="lNames1">Waterline:</label>
-                            <input type="text" placeholder="Waterline" class="inField">
+                            <input type="text" placeholder="Waterline" class="inField5" />
+                           </div>
+                          <div>  
                             <label class="lNames1">Survey:</label>
-                            <input type="text" placeholder="Survey" class="inField">
+                            <input type="text" placeholder="Survey" class="inField6" />
+                           </div>
+                          <div>  
                             <label class="lNames1">Cap Changes:</label>
-                            <input type="text" placeholder="Cap Changes" class="inField">
+                            <input type="text" placeholder="Cap Changes" class="inField7" /> 
+                           </div>
+                          <div>                    
+                            <label class="lNames1">Powerline:</label>
+                            <input type="text" class="inField8" placeholder="Powerline" />
+                           </div>
+                          <div>  
+                            <label class="lNames1">Sewerline:</label>
+                            <input type="text" class="inField9" placeholder="Sewerline" />
+                           </div>
+                          <div>  
+                            <label class="lNames1">Amps:</label>
+                            <input type="text" class="inField10" placeholder="Amps" />
+                           </div>
+                          <div>  
+                            <label class="lNames1">Frontage:</label>
+                            <input type="text" class="inField11" placeholder="Frontage" />
+                           </div>
+                          <div>  
+                            <label class="lNames1">Structure:</label>
+                            <input type="text" class="inField12" placeholder="Structure" />
+                           </div>
+                          <div>  
+                            <label class="lNames1">Usage:</label>
+                            <input type="text" class="inField13" placeholder="Usage" />
+                           </div>
+                          <div>  
+                            <label class="lNames1">Mineral Rights:</label>
+                            <input type="text" class="inField14" placeholder="Mineral Rights" />
+                           </div>
+                          <div>  
+                            <label class="lNames1">Unorganized Township:</label>
+                            <input type="text" class="inField15" placeholder="Unorganized Township" />
+                            </div>
+                          <div> 
                         </div>
-                    </div>
+                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div>
-                        <label class="lNames2">Powerline:</label>
-                        <input type="text" class="inField" placeholder="Powerline">
-                        <label class="lNames2">Sewerline:</label>
-                        <input type="text" class="inField" placeholder="Sewerline">
-                        <label class="lNames2">Amps:</label>
-                        <input type="text" class="inField" placeholder="Amps">
-                        <label class="lNames2">Frontage:</label>
-                        <input type="text" class="inField" placeholder="Frontage">
-                        <label class="lNames2">Structure:</label>
-                        <input type="text" class="inField" placeholder="Structure">
-                        <label class="lNames2">Usage:</label>
-                        <input type="text" class="inField" placeholder="Usage">
-                        <label class="lNames2">Mineral Rights:</label>
-                        <input type="text" class="inField" placeholder="Mineral Rights">
-                        <label class="lNames2">Unorganized Township:</label>
-                        <input type="text" class="inField" placeholder="Unorganized Township">
-                    </div>
-                </div>
-
-
-                <hr>
                 <div>
                     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Edit a Property</button>
-                    <select>
+                    <select class="edProp">
                         <option>Lake Front</option>
                         <option>River Front</option>
                         <option>Hunting Land</option>
@@ -226,7 +261,7 @@
 <style scoped>
 .admin{
   background-color: orange;
-  height: 1500px;
+  height: 1600px;
 }
 .btn{
   margin-bottom: 20px;
@@ -241,9 +276,52 @@
 h3{
   margin-left: 140px;
 }
-.inField{
-  margin-left: 190px;
+.inField1{
+  margin-left: 130px;
 }
+.inField2{
+  margin-left: 138px;
+}
+.inField3{
+  margin-left: 123px;
+}
+.inField4{
+  margin-left: 125px;
+}
+.inField5{
+  margin-left: 105px;
+}
+.inField6{
+  margin-left: 123px;
+}
+.inField7{
+  margin-left: 80px;
+}
+.inField8{
+  margin-left: 105px;
+}
+.inField9{
+  margin-left: 105px;
+}
+.inField10{
+  margin-left: 131px;
+}
+.inField11{
+  margin-left: 112px;
+}
+.inField12{
+  margin-left: 110px;
+}
+.inField13{
+  margin-left: 129px;
+}
+.inField14{
+  margin-left: 76px;
+}
+.inField15{
+  margin-left: 21px;
+}
+
 input{
   float-left: 400px;
 }
@@ -295,6 +373,29 @@ input{
   height: 310px;
   width: 450px;
   margin-left: 140px;
+}
+#tohide{
+  visibility: hidden;
+}
+.upload{
+  border-color: blue;
+  background-color: white;
+  border-radius: 5px;
+  color: green;
+  width: 200px;
+  height: 50px;
+  margin-left: 310px;
+}
+.propLNG{
+  margin-left: 74px;
+  margin-top: 10px;
+}
+.propLAT{
+  margin-left: 90px;
+  margin-top: 10px;
+}
+.edProp{
+  width: 500px;
 }
 
 
